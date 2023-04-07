@@ -3,50 +3,53 @@
 
 # League Specific: Crucible
 
-#Show
-#    BaseType "Primeval Remnant"
-#    SetFontSize 45
-#    CustomAlertSound "mike.mp3"
+Show
+    BaseType "Primeval Remnant"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 231 180 120
+    SetBorderColor 231 180 120
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 Red Triangle
+    PlayEffect Red
+    CustomAlertSound "mike.mp3"
 
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
-#    SetFontSize 45
-#    CustomAlertSound "super_1.mp3"
+Show
+    Class "Stackable Currency"
+    BaseType "Igneous Geode" "Crystalline Geode" "Magmatic Ore"
+    SetTextColor 128 0 128 255
+    SetBackgroundColor 231 180 120
+    SetBorderColor 231 180 120
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 Red Triangle
+    PlayEffect Red
+    CustomAlertSound "super_1.mp3"
 
 # ADD LINE: HasCruciblePassiveTree True
-#Show
-#    ItemLevel > 0
-#    Rarity >= Normal
-#    SetTextColor 255 165 0 255
-#    SetBackgroundColor 0 0 0
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 45
-#    DisableDropSound
-#    MinimapIcon 0 Yellow Star
-#    PlayEffect Yellow
+Show
+	HasCruciblePassiveTree True
+    ItemLevel > 0
+    Rarity >= Normal
+    SetTextColor 255 165 0 255
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 165 0 255
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 Yellow Star
+    PlayEffect Yellow
 
 # ADD LINE: HasImplicitMod True
-#Show
-#    ItemLevel > 0
-#    Rarity >= Normal
-#    SetBackgroundColor 0 0 0 255
-#    SetBorderColor 255 40 0 220
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 0 Yellow Square
-#    PlayEffect Yellow Temp
-
-#Show
-#    Class "Vault Key"
-#    SetTextColor 255 0 0 255
-#    SetBackgroundColor 255 255 255
-#    SetBorderColor 255 0 0 255
-#    SetFontSize 45
-#    DisableDropSound
-#    MinimapIcon 0 Red Star
-#    PlayEffect Red
-#    CustomAlertSound "money.mp3"
+Show
+	HasImplicitMod True
+    ItemLevel > 0
+    Rarity >= Normal
+    SetBackgroundColor 0 0 0 255
+    SetBorderColor 255 40 0 220
+    SetFontSize 40
+    DisableDropSound
+    MinimapIcon 0 Yellow Square
+    PlayEffect Yellow Temp
 
 # League Specific: Sanctum
 
