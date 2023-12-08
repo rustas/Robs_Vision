@@ -13,71 +13,69 @@
 #    MinimapIcon 0 Green Diamond
 #    PlayEffect Green
 
-Show
-    BaseType "Tainted Catalyst"
-    SetTextColor 128 128 128 255
-    SetBackgroundColor 50 230 100
-    SetBorderColor 210 0 0
-    SetFontSize 42
-    DisableDropSound
-    MinimapIcon 1 White Circle
-    PlayEffect White Temp
+#Show
+#    BaseType "Tainted Catalyst"
+#    SetTextColor 128 128 128 255
+#    SetBackgroundColor 50 230 100
+#    SetBorderColor 210 0 0
+#    SetFontSize 42
+#    DisableDropSound
+#    MinimapIcon 1 White Circle
+#    PlayEffect White Temp
 
-Show
-    Class "Rings"
-    BaseType "Composite Ring" "Manifold Ring" "Ratcheting Ring" "Helical Ring"
-    SetBackgroundColor 163 141 109
-    SetBorderColor 163 141 109
-    SetFontSize 40
+#Show
+#    Class "Rings"
+#    BaseType "Composite Ring" "Manifold Ring" "Ratcheting Ring" "Helical Ring"
+#    SetBackgroundColor 163 141 109
+#    SetBorderColor 163 141 109
+#    SetFontSize 40
 
-Show
-    Class "Amulets"
-    BaseType "Focused Amulet"
-    SetBackgroundColor 163 141 109
-    SetBorderColor 163 141 109
-    SetFontSize 40
+#Show
+#    Class "Amulets"
+#    BaseType "Focused Amulet"
+#    SetBackgroundColor 163 141 109
+#    SetBorderColor 163 141 109
+#    SetFontSize 40
 
 # ADD LINE: PlayEffect Purple & MinimapIcon Purple
-Show
-    BaseType "Omen of Amelioration" "Omen of Return" "Omen of Death-dancing" "Omen of Refreshment" "Omen of the Soul Devourer" "Omen of Fortune" "Omen of the Jeweller" "Omen of Connections" "Omen of Blanching" "Omen of Adrenaline" "Omen of Death's Door" "Omen of Brilliance"
-    SetTextColor 128 0 128 200
-    SetBackgroundColor 0 0 0
-    SetBorderColor 128 0 128 255
-    SetFontSize 42
-    DisableDropSound
-    CustomAlertSound "RV_SOUND_DAMN.mp3"
-	PlayEffect Purple
-	MinimapIcon Purple
+#Show
+#    BaseType "Omen of Amelioration" "Omen of Return" "Omen of Death-dancing" "Omen of Refreshment" "Omen of the Soul Devourer" "Omen of Fortune" "Omen of the Jeweller" "Omen of Connections" "Omen of Blanching" "Omen of Adrenaline" "Omen of Death's Door" "Omen of Brilliance"
+#    SetTextColor 128 0 128 200
+#    SetBackgroundColor 0 0 0
+#    SetBorderColor 128 0 128 255
+#    SetFontSize 42
+#    DisableDropSound
+#    CustomAlertSound "RV_SOUND_DAMN.mp3"
 
-Show
-    Class "Tincture"
-    SetTextColor 255 165 0 255
-    SetBackgroundColor 0 0 0
-    SetBorderColor 255 165 0 255
-    SetFontSize 40
-    DisableDropSound
-    MinimapIcon 1 Yellow Star
-    PlayEffect Yellow
+#Show
+#    Class "Tincture"
+#    SetTextColor 255 165 0 255
+#    SetBackgroundColor 0 0 0
+#    SetBorderColor 255 165 0 255
+#    SetFontSize 40
+#    DisableDropSound
+#    MinimapIcon 1 Yellow Star
+#    PlayEffect Yellow
 
-Show
-    Class "Charms"
-    SetTextColor 255 165 0 255
-    SetBackgroundColor 0 0 0
-    SetBorderColor 255 165 0 255
-    SetFontSize 40
-    DisableDropSound
-    MinimapIcon 1 Yellow Star
-    PlayEffect Yellow
+#Show
+#    Class "Charms"
+#    SetTextColor 255 165 0 255
+#    SetBackgroundColor 0 0 0
+#    SetBorderColor 255 165 0 255
+#    SetFontSize 40
+#    DisableDropSound
+#    MinimapIcon 1 Yellow Star
+#    PlayEffect Yellow
 
-Show
-    Class "Corpses"
-    SetTextColor 255 165 0 255
-    SetBackgroundColor 0 0 0
-    SetBorderColor 255 165 0 255
-    SetFontSize 40
-    DisableDropSound
-    MinimapIcon 1 Yellow Star
-    PlayEffect Yellow
+#Show
+#    Class "Corpses"
+#    SetTextColor 255 165 0 255
+#    SetBackgroundColor 0 0 0
+#    SetBorderColor 255 165 0 255
+#    SetFontSize 40
+#    DisableDropSound
+#    MinimapIcon 1 Yellow Star
+#    PlayEffect Yellow
 
 # League Specific: Trials of the Ancestors
 
