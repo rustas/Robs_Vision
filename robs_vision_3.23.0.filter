@@ -47,7 +47,6 @@ Show
     DisableDropSound
     CustomAlertSound "RV_SOUND_DAMN.mp3"
 	PlayEffect Purple
-	MinimapIcon Purple
 
 Show
     Class "Tincture"
@@ -505,15 +504,15 @@ Show
     MinimapIcon 0 Red Star
     PlayEffect Red
 
-Show
-    Class "Pieces"
-    BaseType "Ultimatum Aspect"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 210 0 220
-    SetBorderColor 0 0 0 255
-    SetFontSize 42
-    MinimapIcon 0 Red Triangle
-    PlayEffect Red
+#Show
+#    Class "Pieces"
+#    BaseType "Ultimatum Aspect"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 210 0 220
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 42
+#   MinimapIcon 0 Red Triangle
+#   PlayEffect Red
 
 # League Specific: Rituals
 
@@ -755,7 +754,7 @@ Show # currency
 
 # ADD LINE: PlayEffect Grey,MinimapIcon 0 Grey Circle
 Show # currency
-    BaseType "Kalguuran Delirium Orb" "Fine Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Cartographer's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Skittering Delirium Orb" "Fossilised Delirium Orb" "Diviner's Delirium Orb" "Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Timeless Delirium Orb" "Blighted Delirium Orb" "Amorphous Delirium Orb"
+    BaseType "Kalguuran Delirium Orb" "Fine Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Cartographer's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Skittering Delirium Orb" "Fossilised Delirium Orb" "Diviner's Delirium Orb" "Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Timeless Delirium Orb" "Blighted Delirium Orb"
     SetTextColor 128 128 128 255
     SetBackgroundColor 255 255 255 255
     SetBorderColor 128 128 128 255
