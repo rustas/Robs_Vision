@@ -2888,7 +2888,7 @@ Show
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Chaos Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2896,7 +2896,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Horizon Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2904,7 +2904,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Regal Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2912,7 +2912,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Alteration Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2920,7 +2920,7 @@ Hide
     SetFontSize 33
     DisableDropSound
 
-Hide
+Show
     BaseType "Engineer's Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2930,7 +2930,7 @@ Hide
 
 # Curreny Hide Section
 
-Hide
+Show
     BaseType "Cartographer's Chisel"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2938,7 +2938,7 @@ Hide
     SetFontSize 41
     DisableDropSound
 
-Hide
+Show
     BaseType "Orb of Alteration"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2946,7 +2946,7 @@ Hide
     SetFontSize 41
     DisableDropSound
 
-Hide
+Show
     BaseType "Chaos Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2954,7 +2954,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Horizon Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2962,7 +2962,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Regal Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2970,7 +2970,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Alteration Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2978,7 +2978,7 @@ Hide
     SetFontSize 30
     DisableDropSound
 
-Hide
+Show
     BaseType "Engineer's Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2986,7 +2986,7 @@ Hide
     SetFontSize 30
     DisableDropSound
 
-Hide
+Show
     BaseType "Chaos Shard" "Regal Shard" "Alteration Shard" "Horizon Shard"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2994,7 +2994,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Orb of Chance"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3002,7 +3002,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     BaseType "Jeweller's Orb"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3010,7 +3010,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     BaseType "Chromatic Orb"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3018,7 +3018,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     BaseType "Orb of Transmutation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3026,7 +3026,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Orb of Augmentation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3034,7 +3034,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Blacksmith's Whetstone"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3042,7 +3042,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Armourer's Scrap"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3050,7 +3050,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Engineer's Shard"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3058,7 +3058,7 @@ Hide
     SetFontSize 25
     DisableDropSound
 
-Hide
+Show
     BaseType "Transmutation Shard" "Binding Shard" "Alchemy Shard"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3066,7 +3066,7 @@ Hide
     SetFontSize 25
     DisableDropSound
 
-Hide
+Show
     BaseType "Scroll of Wisdom"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3074,7 +3074,7 @@ Hide
     SetFontSize 35
     DisableDropSound
 
-Hide
+Show
     BaseType "Portal Scroll"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -3277,19 +3277,19 @@ Show # Gems
     SetBorderColor 27 162 155
     SetFontSize 35
 
-Hide # Gems
+Show # Gems
     Quality >= 14
     Class "Skill Gem" "Support Gem"
     SetBorderColor 27 162 155
     SetFontSize 35
 
-Hide # Gems
+Show # Gems
     Quality >= 13
     Class "Skill Gem" "Support Gem"
     SetBorderColor 27 162 155
     SetFontSize 35
 
-Hide # Gems
+Show # Gems
     Quality >= 5
     Class "Skill Gem" "Support Gem"
     SetBorderColor 27 162 155
@@ -3440,20 +3440,20 @@ Show
 # SMOLL
 Show
     Class "Divination Card"
-	BaseType == "A Dab of Ink" "Alone in the Darkness" "Assassin's Favour" "Azure Rage" "Blind Venture" "Broken Truce" "Cursed Words" "Death" "Doedre's Madness" "Dying Anguish" "Earth Drinker" "Eldritch Perfection" "Endless Night" "Gift of the Gemling Queen" "Glimmer of Hope" "Heterochromia" "Hope" "Hubris" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Light and Truth" "Lysah's Respite" "Merciless Armament" "Mitts" "Perfection" "Prejudice" "Pride Before the Fall" "Reckless Ambition" "Sambodhi's Wisdom" "Shard of Fate" "Terrible Secret of Space" "The Admirer" "The Aesthete" "The Battle Born" "The Bear Woman" "The Blessing of Moosh" "The Body" "The Brawny Battle Mage" "The Brittle Emperor" "The Cache" "The Cataclysm" "The Coming Storm" "The Darkest Dream" "The Deep Ones" "The Doppelganger" "The Dreamland" "The Easy Stroll" "The Encroaching Darkness" "The Explorer" "The Fathomless Depths" "The Formless Sea" "The Forward Gaze" "The Fox" "The Gentleman" "The Gladiator" "The Golden Era" "The Hunger" "The Jeweller's Boon" "The King's Heart" "The Lion" "The Lord in Black" "The Mercenary" "The Messenger" "The Mind's Eyes" "The Offspring" "The One With All" "The Penitent" "The Poet" "The Queen" "The Realm" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Thaumaturgist" "The Tower" "The Traitor" "The Twilight Moon" "The Tyrant" "The Whiteout" "The Wind" "The Wolf" "The Wolf's Legacy" "The Wolven King's Bite" "The Wolverine" "Time-Lost Relic" "Triskaidekaphobia" "Volatile Power"
+    BaseType "==" "A Dab of Ink" "Alone in the Darkness" "Assassin's Favour" "Azure Rage" "Blind Venture" "Broken Truce" "Cursed Words" "Death" "Doedre's Madness" "Dying Anguish" "Earth Drinker" "Eldritch Perfection" "Endless Night" "Gift of the Gemling Queen" "Glimmer of Hope" "Heterochromia" "Hope" "Hubris" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Light and Truth" "Lysah's Respite" "Merciless Armament" "Mitts" "Perfection" "Prejudice" "Pride Before the Fall" "Reckless Ambition" "Sambodhi's Wisdom" "Shard of Fate" "Terrible Secret of Space" "The Admirer" "The Aesthete" "The Battle Born" "The Bear Woman" "The Blessing of Moosh" "The Body" "The Brawny Battle Mage" "The Brittle Emperor" "The Cache" "The Cataclysm" "The Coming Storm" "The Darkest Dream" "The Deep Ones" "The Doppelganger" "The Dreamland" "The Easy Stroll" "The Encroaching Darkness" "The Explorer" "The Fathomless Depths" "The Formless Sea" "The Forward Gaze" "The Fox" "The Gentleman" "The Gladiator" "The Golden Era" "The Hunger" "The Jeweller's Boon" "The King's Heart" "The Lion" "The Lord in Black" "The Mercenary" "The Messenger" "The Mind's Eyes" "The Offspring" "The One With All" "The Penitent" "The Poet" "The Queen" "The Realm" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Thaumaturgist" "The Tower" "The Traitor" "The Twilight Moon" "The Tyrant" "The Whiteout" "The Wind" "The Wolf" "The Wolf's Legacy" "The Wolven King's Bite" "The Wolverine" "Time-Lost Relic" "Triskaidekaphobia" "Volatile Power"
     SetTextColor 255 255 255 199
     SetBackgroundColor 0 0 255 199
     SetBorderColor 0 0 255 199
-    SetFontSize 30
+    SetFontSize 25
 
 # SMOLL
 Show
     Class "Divination Card"
-	BaseType == "Boon of Justice" "Coveted Possession" "Gemcutter's Promise" "Her Mask" "Loyalty" "Rain of Chaos" "The Catalyst" "The Flora's Gift" "The Gambler" "The Gemcutter" "The Master Artisan" "The Puzzle" "The Scholar" "The Survivalist" "The Tireless Extractor" "Three Voices"
+    BaseType "==" "Boon of Justice" "Coveted Possession" "Gemcutter's Promise" "Her Mask" "Loyalty" "Rain of Chaos" "The Catalyst" "The Flora's Gift" "The Gambler" "The Gemcutter" "The Master Artisan" "The Puzzle" "The Scholar" "The Survivalist" "The Tireless Extractor" "Three Voices"
     SetTextColor 255 255 255 199
     SetBackgroundColor 0 0 255 199
     SetBorderColor 0 0 255 199
-    SetFontSize 30
+    SetFontSize 20
 
 # HIDE
 Hide
