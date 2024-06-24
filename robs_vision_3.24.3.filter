@@ -1884,6 +1884,19 @@ Show
     MinimapIcon 0 Red Square
     PlayEffect Red
 
+# ADD LINE: Map Tier = 17
+Show
+    MapTier = 17
+    Class "Maps"
+    SetTextColor 74 0 160 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 74 0 160 255
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 Red Square
+    PlayEffect Red
+    CustomAlertSound "money.mp3"
+
 Show
     MapTier = 16
     Rarity <= Rare
@@ -1911,6 +1924,7 @@ Show
 
 Show
     Corrupted True
+    MapTier >= 14
     Rarity >= Rare
     Class "Maps"
     SetBackgroundColor 210 0 0 150
@@ -1919,7 +1933,7 @@ Show
     DisableDropSound
     PlayEffect Red
 
-Show
+Hide
     MapTier <= 13
     Rarity <= Rare
     Class "Maps"
@@ -1928,7 +1942,7 @@ Show
     SetFontSize 37
     DisableDropSound
 
-Show
+Hide
     Class "Maps"
     SetBackgroundColor 127 0 0 150
     SetBorderColor 255 255 255 150
@@ -2099,7 +2113,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Chromatic Orb"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2109,7 +2123,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Orb of Chance"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2119,7 +2133,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Jeweller's Orb"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2129,7 +2143,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 5
+    StackSize >= 20
     BaseType "Orb of Transmutation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2139,7 +2153,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 5
+    StackSize >= 20
     BaseType "Orb of Augmentation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2149,7 +2163,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 7
+    StackSize >= 30
     BaseType "Scroll of Wisdom"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2158,7 +2172,7 @@ Show
     DisableDropSound
 
 Show
-    StackSize >= 7
+    StackSize >= 30
     BaseType "Portal Scroll"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2167,7 +2181,7 @@ Show
     DisableDropSound
 
 Show
-    StackSize >= 5
+    StackSize >= 20
     BaseType "Armourer's Scrap"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2176,7 +2190,7 @@ Show
     DisableDropSound
 
 Show
-    StackSize >= 5
+    StackSize >= 20
     BaseType "Blacksmith's Whetstone"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -4178,7 +4192,7 @@ Show
     MinimapIcon 0 Yellow Square
     PlayEffect Yellow Temp
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Belts"
@@ -4218,7 +4232,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Rings"
@@ -4238,7 +4252,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Rings"
@@ -4248,7 +4262,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Amulets"
@@ -4258,7 +4272,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Amulets"
@@ -4269,8 +4283,7 @@ Show
     SetFontSize 40
 
 # ADD LINE: AreaLevel < 69
-Show
-	AreaLevel < 69
+Hide
     Corrupted False
     Rarity = Rare
     Class "Rings" "Belts" "Amulets"
@@ -4279,7 +4292,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Convoking Wand"
@@ -4288,7 +4301,7 @@ Show
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Imbued Wand"
@@ -4351,7 +4364,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Feathered Arrow Quiver"
@@ -4360,7 +4373,7 @@ Show
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Primal Arrow Quiver"
@@ -4378,7 +4391,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Broadhead Arrow Quiver"

@@ -1,109 +1,563 @@
 ﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
 # Made by RobUnderscore
 
-# Retired:
+# Leveling Currency
 
-# ADD LINE: Minimap Icon Purple
+# ADD LINE: AreaLevel <= 23
+Show
+	AreaLevel <= 23
+    Class "Stackable Currency"
+    BaseType "Portal Scroll" "Scroll of Wisdom"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+
+# ADD LINE: AreaLevel <= 45
+Show
+	AreaLevel <= 45
+    Class "Stackable Currency"
+    BaseType "Portal Scroll" "Scroll of Wisdom"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 255 255 255 255
+
+# ADD LINE: AreaLevel <= 78
+Show
+	AreaLevel <= 78
+    Class "Stackable Currency"
+    BaseType "Portal Scroll" "Scroll of Wisdom"
+    SetTextColor 0 0 0 175
+    SetBackgroundColor 0 128 0 175
+    SetBorderColor 0 0 0 175
+    SetFontSize 30
+
+# ADD LINE: AreaLevel >= 79
+Hide
+	AreaLevel >= 79
+    Class "Stackable Currency"
+    BaseType "Portal Scroll" "Scroll of Wisdom"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+
+# ADD LINE: AreaLevel <= 23
+Show
+	AreaLevel <= 23
+    Class "Stackable Currency"
+    BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    CustomAlertSound "MGS.mp3"
+
+# ADD LINE: AreaLevel <= 68
+Show
+	AreaLevel <= 68
+    Class "Stackable Currency"
+    BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 255 255 255 255
+
+# ADD LINE: AreaLevel <= 78
+Show
+	AreaLevel <= 78
+    Class "Stackable Currency"
+    BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
+    SetTextColor 0 0 0 200
+    SetBackgroundColor 0 128 0 200
+    SetBorderColor 0 0 0 200
+    SetFontSize 30
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Orb of Augmentation" "Glassblower's Bauble" "Gemcutter's Prism" "Enkindling Orb" "Instilling Orb" "Orb of Scouring" "Orb of Binding" "Engineer's Orb" "Chromatic Orb"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    MinimapIcon 1 White Circle
+    CustomAlertSound "MGS.mp3"
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Orb of Transmutation"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    MinimapIcon 1 White Circle
+    CustomAlertSound "RV_orb_of_transmute.wav"
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Orb of Alteration"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    MinimapIcon 1 White Circle
+    CustomAlertSound "RV_orb_of_alteration.wav"
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Orb of Chance"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    MinimapIcon 1 White Circle
+    CustomAlertSound "RV_orb_of_chance.wav"
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Orb of Alchemy"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    PlayAlertSoundPositional ShAlchemy 100
+    MinimapIcon 1 White Circle
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Jeweller's Orb"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    MinimapIcon 1 White Circle
+    CustomAlertSound "RV_orb_of_augment.wav"
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Orb of Fusing"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    PlayAlertSoundPositional ShFusing 100
+    MinimapIcon 1 White Circle
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Regal Orb"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    PlayAlertSoundPositional ShRegal 100
+    MinimapIcon 1 White Circle
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Chaos Orb"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    PlayAlertSoundPositional ShChaos 100
+    MinimapIcon 1 White Circle
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Orb of Regret"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    MinimapIcon 1 White Circle
+    CustomAlertSound "mistake.mp3"
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Blessed Orb"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    PlayAlertSoundPositional ShBlessed 100
+    MinimapIcon 1 White Circle
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Vaal Orb"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    PlayAlertSoundPositional ShVaal 100
+    MinimapIcon 1 White Circle
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Exalted Orb"
+    SetTextColor 0 128 0 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 0 128 0 255
+    PlayAlertSoundPositional ShExalted 100
+    MinimapIcon 1 White Circle
+
+# ADD LINE: AreaLevel <= 68
+Show
+	AreaLevel <= 67
+    Class "Stackable Currency"
+    BaseType "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Engineer's Shard" "Horizon Shard" "Regal Shard" "Transmutation Shard"
+    SetTextColor 0 0 0 175
+    SetBackgroundColor 0 128 0 175
+    SetBorderColor 0 0 0 175
+    SetFontSize 30
+
+# ADD LINE: AreaLevel <= 68
 #Show
-#    BaseType "Silver Coin"
-#    SetTextColor 128 0 128 200
-#    SetBackgroundColor 0 0 0
-#    SetBorderColor 128 0 128 255
-#    SetFontSize 42
-#    DisableDropSound
-#    MinimapIcon 1 Purple Circle
-#    PlayEffect Purple
-#    CustomAlertSound "RV_SOUND_DAMN.mp3"
+#    Class "Stackable Currency"
+#    BaseType "Ancient Shard" "Annulment Shard" "Exalted Shard"
+#    SetTextColor 0 128 0 255
+#    SetBackgroundColor 255 255 255 255
+#    SetBorderColor 0 128 0 255
 
-#Show
-#    BaseType "Tainted Catalyst"
-#    SetTextColor 128 128 128 255
-#    SetBackgroundColor 50 230 100
-#    SetBorderColor 210 0 0
-#    SetFontSize 42
-#    DisableDropSound
-#    MinimapIcon 1 White Circle
-#    PlayEffect White Temp
+# Leveling Gear
 
-#Show
-#    Class "Misc Map Items"
-#    BaseType "Maven's Invitation: The Formed"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 74 230 58
-#    SetBorderColor 255 255 255 255
-#    SetFontSize 42
-#    DisableDropSound
-#    MinimapIcon 1 Green Square
-#    PlayEffect Green
-#    CustomAlertSound "warlocks.mp3"
+Show
+    LinkedSockets >= 3
+    ItemLevel <= 25
+    Rarity <= Rare
+    SetBorderColor 0 175 255 255
+    MinimapIcon 2 White Square
+    PlayEffect White Temp
 
-#Show
-#    Class "Misc Map Items"
-#    BaseType "Maven's Invitation: The Twisted"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 74 230 58
-#    SetBorderColor 255 255 255 255
-#    SetFontSize 42
-#    DisableDropSound
-#    MinimapIcon 1 Green Square
-#    PlayEffect Green
-#    CustomAlertSound "warlocks.mp3"
+Show
+    LinkedSockets >= 3
+    ItemLevel <= 69
+    Rarity <= Rare
+    Class "Wands" "One Hand Axes" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Maces" "Sceptres" "Shields" "Daggers" "Rune Dagger" "Claws"
+    SetBackgroundColor 0 0 0 100
+    SetBorderColor 0 175 255 175
+    SetFontSize 29
 
-#Show
-#    Class "Misc Map Items"
-#    BaseType "Maven's Invitation: The Elderslayers"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 74 230 58
-#    SetBorderColor 255 255 255 255
-#    SetFontSize 42
-#    DisableDropSound
-#    MinimapIcon 1 Green Square
-#    PlayEffect Green
-#    CustomAlertSound "warlocks.mp3"
+Show
+    LinkedSockets >= 4
+    ItemLevel <= 47
+    Rarity <= Rare
+    SetBorderColor 0 175 255 255
+    MinimapIcon 2 White Square
+    PlayEffect White Temp
 
-#Show
-#    Class "Misc Map Items"
-#    BaseType "Maven's Invitation: The Atlas"
-#    SetTextColor 0 0 0 155
-#    SetBackgroundColor 74 230 58
-#    SetBorderColor 0 0 0 155
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 2 Green Square
-#    PlayEffect Green
+Show
+    LinkedSockets >= 4
+    ItemLevel <= 69
+    Rarity <= Rare
+    SetBackgroundColor 0 0 0 100
+    SetBorderColor 0 175 255 175
+    SetFontSize 29
 
-#Show
-#    Class "Misc Map Items"
-#    BaseType "Maven's Invitation: The Forgotten" "Maven's Invitation: The Hidden" "Maven's Invitation: The Feared"
-#    SetTextColor 0 0 0 155
-#    SetBackgroundColor 74 230 58
-#    SetBorderColor 0 0 0 155
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 2 Green Square
-#    PlayEffect Green
+Show
+    ItemLevel <= 12
+    BaseType "Small Life Flask" "Medium Life Flask" "Large Life Flask" "Small Mana Flask" "Medium Mana Flask" "Large Mana Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
 
-#Show # currency
-#    BaseType "Elevated Sextant"
-#    SetTextColor 127 255 212 255
-#    SetBackgroundColor 255 116 0 255
-#    SetBorderColor 127 255 212 255
-#    SetFontSize 45
-#    DisableDropSound
-#    MinimapIcon 0 White Circle
-#    PlayEffect White
-#    CustomAlertSound "nuts_2.mp3"
+Show
+    ItemLevel <= 26
+    BaseType "Greater Life Flask" "Greater Mana Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
 
-#Show # currency
-#    BaseType "Awakened Sextant"
-#    SetTextColor 210 0 0
-#    SetBackgroundColor 255 116 0 255
-#    SetBorderColor 210 0 0
-#    SetFontSize 45
-#    DisableDropSound
-#    MinimapIcon 0 White Circle
-#    PlayEffect White
-#    CustomAlertSound "nuts.mp3"
+Show
+    ItemLevel <= 44
+    BaseType "Giant Life Flask" "Giant Mana Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
+
+Show
+    ItemLevel <= 62
+    BaseType "Hallowed Life Flask" "Hallowed Mana Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
+
+Show
+    ItemLevel <= 72
+    BaseType "Divine Life Flask" "Divine Mana Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
+
+Show
+    ItemLevel <= 22
+    BaseType "Small Hybrid Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
+
+Show
+    ItemLevel <= 32
+    BaseType "Medium Hybrid Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
+
+Show
+    ItemLevel <= 42
+    BaseType "Large Hybrid Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
+
+Show
+    ItemLevel <= 52
+    BaseType "Colossal Hybrid Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
+
+Show
+    ItemLevel <= 62
+    BaseType "Sacred Hybrid Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
+
+Show
+    ItemLevel <= 72
+    BaseType "Hallowed Hybrid Flask"
+    SetBackgroundColor 0 0 0 200
+    SetBorderColor 50 230 100 120
+
+Show
+    ItemLevel <= 15
+    Rarity = Normal
+    Class "Rings" "Belts" "Amulets"
+    SetBorderColor 255 165 0 255
+
+Show
+    ItemLevel <= 69
+    Rarity = Normal
+    Class "Rings" "Belts" "Amulets"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 47
+    Rarity = Magic
+    Class "Rings" "Belts" "Amulets"
+    SetBorderColor 255 165 0 255
+
+# ADD LINE: AreaLevel <= 67
+Show
+    ItemLevel <= 69
+    Rarity = Magic
+    Class "Rings" "Belts" "Amulets"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+# ADD LINE: AreaLevel <= 67
+Show
+    ItemLevel <= 69
+    Rarity >= Rare
+    Class "Rings" "Belts" "Amulets"
+    SetBorderColor 255 165 0 255
+
+Show
+    ItemLevel <= 15
+    Rarity = Magic
+    Class "Boots"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 165 0 255
+    MinimapIcon 2 White Square
+    PlayEffect White
+
+Show
+    ItemLevel <= 25
+    Rarity >= Magic
+    Class "Boots"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 165 0 255
+    MinimapIcon 2 White Square
+    PlayEffect White
+
+Show
+    ItemLevel <= 25
+    Rarity <= Magic
+    Class "Boots"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 32
+    Rarity <= Magic
+    Class "Wands"
+    BaseType "Carved Wand"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 42
+    Rarity <= Magic
+    Class "Wands"
+    BaseType "Sage Wand"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 55
+    Rarity <= Magic
+    Class "Wands"
+    BaseType "Engraved Wand"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 61
+    Rarity <= Magic
+    Class "Wands"
+    BaseType "Omen Wand"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 80
+    Rarity <= Magic
+    Class "Wands"
+    BaseType "Imbued Wand"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+# ADD LINE: AreaLevel < 80
+Show
+    ItemLevel <= 80
+    Rarity <= Magic
+    Class "Wands"
+    BaseType "Prophecy Wand"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+# ADD LINE: AreaLevel < 55
+Show
+    ItemLevel <= 57
+    Rarity <= Magic
+    Class "Wands"
+    BaseType "Pagan Wand"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 72
+    Rarity <= Magic
+    Class "Wands"
+    BaseType "Heathen Wand"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+# ADD LINE: AreaLevel < 80
+Show
+    ItemLevel <= 80
+    Rarity <= Magic
+    Class "Wands"
+    BaseType "Profane Wand"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 15
+    Rarity <= Magic
+    Class "Axes"
+    BaseType "Stone Axe"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 20
+    Rarity <= Magic
+    Class "Axes"
+    BaseType "Woodsplitter"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 25
+    Rarity <= Magic
+    Class "Axes"
+    BaseType "Poleaxe"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 43
+    Rarity <= Magic
+    Class "Axes"
+    BaseType "Double Axe"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 51
+    Rarity <= Magic
+    Class "Axes"
+    BaseType "Timber Axe"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 62
+    Rarity <= Magic
+    Class "Axes"
+    BaseType "Labrys"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+Show
+    ItemLevel <= 80
+    Rarity <= Magic
+    Class "Axes"
+    BaseType "Sundering Axe"
+    SetBackgroundColor 0 0 0 120
+    SetBorderColor 255 165 0 120
+    SetFontSize 25
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
+    Rarity = Rare
+    SetTextColor 255 255 0 255
+
+# ADD LINE: AreaLevel < 23
+Show
+	AreaLevel < 23
+    Rarity = Magic
+    SetFontSize 27
+
+# ADD LINE: AreaLevel < 8
+Show
+	AreaLevel < 8
+    Rarity = Normal
+    SetBackgroundColor 0 0 0 125
+    SetFontSize 28
 
 # League Specific: Affliction
 
@@ -117,17 +571,6 @@ Show # currency
     MinimapIcon 1 Red Circle
     PlayEffect White
     CustomAlertSound "nuts.mp3"
-
-# ADD LINE: TransfiguredGem True
-Show
-	TransfiguredGem True
-    SetTextColor 255 255 255 255
-    SetBackgroundColor 50 230 100
-    SetBorderColor 255 255 255 255
-    SetFontSize 45
-    DisableDropSound
-    MinimapIcon 0 Green Diamond
-    PlayEffect Green
 
 Show
     FracturedItem True
@@ -197,25 +640,6 @@ Show
     PlayEffect White
     CustomAlertSound "book.mp3"
 
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Lycia's Invocation of"
-#    SetTextColor 255 255 255 255
-#    SetBackgroundColor 231 180 120
-#    SetBorderColor 255 255 255 255
-#    SetFontSize 45
-#    DisableDropSound
-#    CustomAlertSound "a-very-nice.mp3"
-
-#Show
-#    Rarity = Unique
-#    Class "Relic" "Sanctified Relic"
-#    SetTextColor 175 96 37
-#    SetBackgroundColor 231 180 120
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 45
-#    DisableDropSound
-
 Show
     Class "Relic"
     SetTextColor 0 0 0 255
@@ -225,25 +649,37 @@ Show
     PlayAlertSoundPositional 16 100
     DisableDropSound
 
-# Juice
+# League Specific: Harvest
+
+Show # maps
+    BaseType "Sacred Blossom"
+    SetTextColor 210 0 220
+    SetBackgroundColor 0 255 0 200
+    SetBorderColor 210 0 220
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 White Diamond
+    PlayEffect White
+    CustomAlertSound "MGS.mp3"
 
 Show
     Class "Stackable Currency"
     BaseType "Sacred Crystallised Lifeforce"
     SetTextColor 210 0 220
-    SetBackgroundColor 255 255 255 255
+    SetBackgroundColor 0 255 0 200
     SetBorderColor 210 0 220
     SetFontSize 45
     DisableDropSound
-    MinimapIcon 0 White Circle
+    MinimapIcon 0 White Star
+    CustomAlertSound "MGS.mp3"
 
 Show
     Class "Stackable Currency"
     BaseType "Vivid Crystallised Lifeforce"
     SetTextColor 255 200 0
-    SetBackgroundColor 54 100 146
+    SetBackgroundColor 0 255 0 200
     SetBorderColor 255 200 0
-    SetFontSize 38
+    SetFontSize 40
     DisableDropSound
     MinimapIcon 1 White Circle
 
@@ -251,9 +687,9 @@ Show
     Class "Stackable Currency"
     BaseType "Wild Crystallised Lifeforce"
     SetTextColor 128 0 128 255
-    SetBackgroundColor 54 100 146
+    SetBackgroundColor 0 255 0 200
     SetBorderColor 128 0 128 255
-    SetFontSize 38
+    SetFontSize 40
     DisableDropSound
     MinimapIcon 1 White Circle
 
@@ -261,188 +697,86 @@ Show
     Class "Stackable Currency"
     BaseType "Primal Crystallised Lifeforce"
     SetTextColor 30 144 255
-    SetBackgroundColor 54 100 146
+    SetBackgroundColor 0 255 0 200
     SetBorderColor 30 144 255
-    SetFontSize 38
+    SetFontSize 40
     DisableDropSound
     MinimapIcon 1 White Circle
 
-# League Specific: Sentinel
-
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Armour Recombinator"
-#    SetTextColor 0 70 100 255
-#    SetBackgroundColor 255 255 255 255
-#    SetBorderColor 0 70 100 255
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 1 White Circle
-#    PlayEffect White
-#    CustomAlertSound "boom.mp3"
-
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Weapon Recombinator"
-#    SetTextColor 0 70 100 255
-#    SetBackgroundColor 255 255 255 255
-#    SetBorderColor 0 70 100 255
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 1 White Circle
-#    PlayEffect White
-#    CustomAlertSound "boom.mp3"
-
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Jewellery Recombinator"
-#    SetTextColor 0 70 100 255
-#    SetBackgroundColor 255 255 255 255
-#    SetBorderColor 0 70 100 255
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 1 White Circle
-#    PlayEffect White
-#    CustomAlertSound "boom.mp3"
-
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Power Core"
-#    SetTextColor 30 144 255
-#    SetBackgroundColor 0 0 0 180
-#    SetBorderColor 30 144 255
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 1 Blue Diamond
-#    PlayEffect Blue Temp
-
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Transforming Power Core"
-#    SetTextColor 30 144 255
-#    SetBackgroundColor 0 0 0 180
-#    SetBorderColor 30 144 255
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 1 Blue Diamond
-#    PlayEffect Blue Temp
-
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Amplifying Power Core"
-#    SetTextColor 30 144 255
-#    SetBackgroundColor 0 0 0 180
-#    SetBorderColor 30 144 255
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 1 Blue Diamond
-#    PlayEffect Blue Temp
-
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Augmenting Power Core"
-#    SetTextColor 30 144 255
-#    SetBackgroundColor 0 0 0 180
-#    SetBorderColor 30 144 255
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 1 Blue Diamond
-#    PlayEffect Blue Temp
-
-# ADD LINE: Class "Sentinel Drone"
-#Hide
-#    Class "Sentinel Drone"
-#    BaseType "Apex"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 30 144 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 40
-#    DisableDropSound
-
-# ADD LINE: Class "Sentinel Drone"
-#Show
-#    Rarity >= Rare
-#    Class "Sentinel Drone"
-#    BaseType "Obsidian" "Emberstone"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 30 144 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 40
-#    DisableDropSound
-#    MinimapIcon 1 Blue Diamond
-#    PlayEffect Blue Temp
-#    CustomAlertSound "uh_uh.mp3"
-
-# League Specific: Archnemesis
+Show
+    BaseType "Facetor's Lens"
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetFontSize 40
 
 # League Specific: Scourge
 
 Show
     Class "Stackable Currency"
-    BaseType "Sacred Orb" "Tainted Divine Teardrop"
+    BaseType "Tainted Divine Teardrop"
     SetTextColor 255 0 0 255
     SetBackgroundColor 0 70 100 255
     SetBorderColor 255 0 0 255
     SetFontSize 45
     DisableDropSound
-    MinimapIcon 0 White Diamond
-    PlayEffect White
-    CustomAlertSound "BBC.mp3"
+    MinimapIcon 0 Red Diamond
+    PlayEffect Red
+    CustomAlertSound "RV_POWER.mp3"
 
 Show
     Class "Stackable Currency"
     BaseType "Tainted Exalted Orb"
     SetTextColor 255 0 0 255
-    SetBackgroundColor 255 255 255 255
+    SetBackgroundColor 0 70 100 255
     SetBorderColor 255 0 0 255
     SetFontSize 45
     DisableDropSound
-    MinimapIcon 0 White Star
-    PlayEffect White
-    CustomAlertSound "BBC.mp3"
+    MinimapIcon 0 Red Diamond
+    PlayEffect Red
+    CustomAlertSound "RV_POWER.mp3"
 
 Show
     Class "Stackable Currency"
     BaseType "Tainted Mythic Orb"
     SetTextColor 255 0 0 255
-    SetBackgroundColor 255 255 255 255
+    SetBackgroundColor 0 70 100 255
     SetBorderColor 255 0 0 255
-    SetFontSize 45
+    SetFontSize 42
     DisableDropSound
-    MinimapIcon 0 White Star
-    PlayEffect White
-    CustomAlertSound "BBC.mp3"
+    MinimapIcon 0 Red Star
+    PlayEffect Red
+    CustomAlertSound "ocean.mp3"
 
 Show
     Class "Stackable Currency"
     BaseType "Tainted Chaos Orb"
     SetTextColor 255 0 0 255
-    SetBackgroundColor 0 0 0 255
+    SetBackgroundColor 0 70 100 255
     SetBorderColor 255 0 0 255
-    SetFontSize 42
+    SetFontSize 40
     DisableDropSound
-    MinimapIcon 0 White Circle
-    PlayEffect White Temp
-    CustomAlertSound "BBC.mp3"
+    MinimapIcon 0 Red Circle
+    PlayEffect Red Temp
+    CustomAlertSound "money.mp3"
 
 Show
     Class "Stackable Currency"
-    BaseType "Tainted Blessing" "Tainted Orb of Fusing"
+    BaseType "Tainted Orb of Fusing"
     SetTextColor 255 0 0 255
-    SetBackgroundColor 0 0 0 255
+    SetBackgroundColor 0 70 100 255
     SetBorderColor 255 0 0 255
-    SetFontSize 42
-    PlayAlertSoundPositional 11 99
+    SetFontSize 40
     DisableDropSound
-    MinimapIcon 0 White Circle
-    PlayEffect White Temp
+    MinimapIcon 0 Red Circle
+    PlayEffect Red Temp
+    CustomAlertSound "money.mp3"
 
 Show
     Class "Stackable Currency"
     BaseType "Tainted Jeweller's Orb" "Tainted Chromatic Orb"
     SetTextColor 255 0 0 255
-    SetBackgroundColor 0 0 0 255
-    SetBorderColor 255 0 0 255
+    SetBackgroundColor 0 70 100 255
+    SetBorderColor 0 70 100 255
     SetFontSize 37
     DisableDropSound
 
@@ -450,8 +784,8 @@ Show
     Class "Stackable Currency"
     BaseType "Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap"
     SetTextColor 255 0 0 255
-    SetBackgroundColor 0 0 0 255
-    SetBorderColor 0 0 0 255
+    SetBackgroundColor 0 70 100 255
+    SetBorderColor 0 70 100 255
     SetFontSize 37
     DisableDropSound
 
@@ -466,7 +800,7 @@ Show # logbok
     SetFontSize 45
     DisableDropSound
     MinimapIcon 0 White Diamond
-    PlayEffect Green Temp
+    PlayEffect White Temp
     CustomAlertSound "book.mp3"
 
 Show # high tier artifacts?
@@ -520,17 +854,17 @@ Show
 Show
     Class "Stackable Currency"
     BaseType "Ritual Splinter" "Ritual Vessel"
-    SetTextColor 127 127 127 255
-    SetBackgroundColor 210 0 0 160
+    SetTextColor 210 0 0 200
+    SetBackgroundColor 127 127 127 255
     SetBorderColor 127 127 127 255
     SetFontSize 40
     MinimapIcon 2 White Circle
 
 Show
     BaseType "Blood-filled Vessel"
-    SetTextColor 127 127 127 255
-    SetBackgroundColor 210 0 0
-    SetBorderColor 127 127 127 255
+    SetTextColor 210 0 0 220
+    SetBackgroundColor 127 127 127 220
+    SetBorderColor 210 0 0 220
     SetFontSize 42
     PlayAlertSoundPositional 10 79
     DisableDropSound
@@ -552,9 +886,9 @@ Show
 
 Show
     Class "Trinket"
-    SetTextColor 139 199 100
-    SetBackgroundColor 0 128 0 195
-    SetBorderColor 139 199 100
+    SetTextColor 0 0 255 255
+    SetBackgroundColor 139 199 100
+    SetBorderColor 0 0 255 255
     SetFontSize 45
     PlayAlertSoundPositional 10 99
     DisableDropSound
@@ -563,13 +897,13 @@ Show
 
 Show
     Class "Heist Target"
-    SetTextColor 139 199 100
-    SetBackgroundColor 0 128 0 195
-    SetBorderColor 139 199 100
-    SetFontSize 40
+    SetTextColor 0 0 255 255
+    SetBackgroundColor 139 199 100
+    SetBorderColor 0 0 255 255
+    SetFontSize 42
     DisableDropSound
-    MinimapIcon 0 Green Hexagon
-    PlayEffect Green Temp
+    MinimapIcon 0 Blue Hexagon
+    PlayEffect Blue
 
 Show
     Class "Blueprint"
@@ -586,18 +920,18 @@ Show
     Rarity = Unique
     Class "Contract"
     SetTextColor 175 96 37 255
-    SetBackgroundColor 139 199 100 255
-    SetBorderColor 175 96 37 255
+    SetBackgroundColor 139 199 100
+    SetBorderColor 0 0 255 255
     SetFontSize 45
     DisableDropSound
     PlayEffect Brown Temp
 
 Show
     Class "Contract"
-    SetTextColor 139 199 100
-    SetBackgroundColor 128 128 128 200
+    SetTextColor 255 255 255
+    SetBackgroundColor 139 199 100
     SetBorderColor 139 199 100
-    SetFontSize 35
+    SetFontSize 37
     DisableDropSound
 
 Show
@@ -606,7 +940,7 @@ Show
     SetTextColor 0 128 0 255
     SetBackgroundColor 139 199 100
     SetBorderColor 0 128 0 255
-    SetFontSize 42
+    SetFontSize 40
     DisableDropSound
 
 Show
@@ -614,7 +948,7 @@ Show
     SetTextColor 0 128 0 255
     SetBackgroundColor 139 199 100
     SetBorderColor 0 128 0 255
-    SetFontSize 42
+    SetFontSize 40
     DisableDropSound
 
 Show
@@ -653,35 +987,17 @@ Show
     Class "Heist Gear"
     SetBackgroundColor 0 128 0 75
     SetBorderColor 139 199 100
-    SetFontSize 27
+    SetFontSize 30
     DisableDropSound
 
 Show
     Class "Heist Tool"
     SetBackgroundColor 0 128 0 75
     SetBorderColor 139 199 100
-    SetFontSize 27
+    SetFontSize 30
     DisableDropSound
 
 # League Specific: Harvest
-
-Show # maps
-    BaseType "Sacred Blossom"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 255 0 255 180
-    SetBorderColor 0 0 0 255
-    SetFontSize 42
-    DisableDropSound
-    MinimapIcon 0 Red Triangle
-    PlayEffect Red
-    CustomAlertSound "MGS.mp3"
-
-Show
-    BaseType "Facetor's Lens"
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetFontSize 40
-    PlayEffect White
 
 Show # maps
     BaseType "Gift to the Goddess"
@@ -719,7 +1035,7 @@ Show # maps
 # League Specific: Delirium
 
 # ADD LINE: PlayEffect Grey,MinimapIcon 0 Brown Diamond
-Show # currency
+Show
     Rarity = Unique
     BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
     SetTextColor 0 0 0 255
@@ -728,9 +1044,10 @@ Show # currency
     SetFontSize 45
     DisableDropSound
     MinimapIcon 0 Brown Diamond
+	PlayEffect Grey
 
 # ADD LINE: PlayEffect Grey,MinimapIcon 0 Grey Diamond
-Show # currency
+Show
     ItemLevel >= 84
     BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
     SetTextColor 255 255 255 255
@@ -742,7 +1059,7 @@ Show # currency
 	MinimapIcon 0 Grey Diamond
 
 # ADD LINE: PlayEffect Grey,MinimapIcon 0 Grey Diamond
-Show # currency
+Show
     BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
     SetTextColor 255 255 255 255
     SetBackgroundColor 128 128 128 255
@@ -753,7 +1070,7 @@ Show # currency
 	MinimapIcon 1 Grey Diamond
 
 # ADD LINE: PlayEffect Grey,MinimapIcon 0 Grey Circle
-Show # currency
+Show
     BaseType "Kalguuran Delirium Orb" "Fine Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Cartographer's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Skittering Delirium Orb" "Fossilised Delirium Orb" "Diviner's Delirium Orb" "Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Timeless Delirium Orb" "Blighted Delirium Orb"
     SetTextColor 128 128 128 255
     SetBackgroundColor 255 255 255 255
@@ -763,7 +1080,7 @@ Show # currency
 	PlayEffect Grey
 	MinimapIcon 0 Grey Circle
 
-Show # currency
+Show
     BaseType "Simulacrum Splinter"
     SetTextColor 0 0 0 255
     SetBackgroundColor 128 128 128 255
@@ -817,7 +1134,7 @@ Show
     DisableDropSound
     MinimapIcon 0 White Star
     PlayEffect White Temp
-    CustomAlertSound "gold.wav"
+    CustomAlertSound "money.mp3"
 
 Show
     Class "Stackable Currency"
@@ -1142,28 +1459,29 @@ Show
     SetFontSize 42
     MinimapIcon 0 White Star
     PlayEffect White
-    CustomAlertSound "gold.wav"
+    CustomAlertSound "money.mp3"
 
 Show
     Class "Currency"
-    BaseType "Glyphic Fossil" "Fractured Fossil"
+    BaseType "Glyphic Fossil"
     SetTextColor 255 255 255 255
     SetBackgroundColor 255 165 0 255
     SetBorderColor 255 255 255 255
     SetFontSize 42
     MinimapIcon 0 White Star
     PlayEffect White
-    CustomAlertSound "gold.wav"
+    CustomAlertSound "money.mp3"
 
 Show
     Class "Currency"
-    BaseType "Sanctified Fossil" "Gilded Fossil" "Fundamental Fossil" "Hollow Fossil"
+    BaseType "Fractured Fossil"
     SetTextColor 255 255 255 255
     SetBackgroundColor 255 165 0 255
-    SetBorderColor 255 0 0 255
+    SetBorderColor 255 255 255 255
     SetFontSize 42
-    MinimapIcon 1 White Circle
+    MinimapIcon 0 White Star
     PlayEffect White
+    CustomAlertSound "MGS.mp3"
 
 Show
     Class "Currency"
@@ -1171,9 +1489,10 @@ Show
     SetTextColor 0 0 0 255
     SetBackgroundColor 255 165 0 255
     SetBorderColor 0 0 0 255
-    SetFontSize 37
+    SetFontSize 40
     MinimapIcon 1 White Circle
     PlayEffect White Temp
+    CustomAlertSound "gold.wav"
 
 # League Specific: Incursion
 
@@ -1245,23 +1564,14 @@ Show
 
 # League Specific: Breach
 
-# ADD LINE: MinimapIcon 0 Purple UpsideDownHouse & PlayEffect Purple
-#Show
-#    BaseType "Breachstone"
-#    SetTextColor 255 255 0 255
-#    SetBackgroundColor 130 25 255 255
-#    SetBorderColor 255 255 0 255
-#    SetFontSize 45
-#    DisableDropSound
-#    CustomAlertSound "BBC.mp3"
-
 Show
     Class "Currency"
     BaseType "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Chayula"
     SetTextColor 0 0 0 255
     SetBackgroundColor 130 25 255 255
     SetBorderColor 0 0 0 255
-    SetFontSize 37
+    SetFontSize 42
+    MinimapIcon 1 White Circle
 
 Show
     ItemLevel >= 86
@@ -1443,15 +1753,26 @@ Show
 # Valuable
 
 Show
-    BaseType "Mirror of Kalandra" "Hinekora's Lock"
+    BaseType "Mirror of Kalandra"
     SetTextColor 255 0 0 255
     SetBackgroundColor 255 255 255
     SetBorderColor 255 0 0 255
     SetFontSize 45
-    PlayAlertSoundPositional ShMirror 99
     DisableDropSound
     MinimapIcon 0 Red Star
     PlayEffect Red
+    CustomAlertSound "RV_POWER.mp3"
+
+Show
+    BaseType "Hinekora's Lock"
+    SetTextColor 255 0 0 255
+    SetBackgroundColor 255 255 255
+    SetBorderColor 255 0 0 255
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 Red Star
+    PlayEffect Red
+    CustomAlertSound "RV_POWER.mp3"
 
 Show
     BaseType "Valdo's Puzzle Box"
@@ -1531,17 +1852,17 @@ Show
     MinimapIcon 0 Red Star
     PlayEffect Red
 
-Show
-    Class "Skill Gems" "Skill Gems"
-    BaseType "Awakened"
-    SetTextColor 255 0 0 255
-    SetBackgroundColor 255 255 255
-    SetBorderColor 255 0 0 255
-    SetFontSize 45
-    DisableDropSound
-    MinimapIcon 0 Red Star
-    PlayEffect Red
-    CustomAlertSound "BBC.mp3"
+#Show
+#    Class "Skill Gems" "Skill Gems"
+#    BaseType "Awakened"
+#    SetTextColor 255 0 0 255
+#    SetBackgroundColor 255 255 255
+#    SetBorderColor 255 0 0 255
+#    SetFontSize 45
+#    DisableDropSound
+#    MinimapIcon 0 Red Star
+#    PlayEffect Red
+#    CustomAlertSound "BBC.mp3"
 
 Show
     Rarity = Unique
@@ -1571,22 +1892,10 @@ Show
     SetTextColor 255 0 0 255
     SetBackgroundColor 255 255 255 255
     SetBorderColor 255 0 0 255
-    SetFontSize 45
+    SetFontSize 40
     DisableDropSound
-    MinimapIcon 1 White Triangle
+    MinimapIcon 1 White Diamond
     PlayEffect White
-
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Orb of Unmaking"
-#    SetTextColor 255 0 0 255
-#    SetBackgroundColor 255 255 255 255
-#    SetBorderColor 255 0 0 255
-#    SetFontSize 45
-#    DisableDropSound
-#    MinimapIcon 0 White Circle
-#    PlayEffect White
-#    CustomAlertSound "im_kind_of_retarded.mp3"
 
 Show
     LinkedSockets = 6
@@ -1749,6 +2058,8 @@ Show
     SetBorderColor 0 0 255 255
     SetFontSize 42
     DisableDropSound
+    MinimapIcon 0 Blue Hexagon
+    PlayEffect Blue
     CustomAlertSound "RV_DOGS.mp3"
 
 Show
@@ -1884,6 +2195,19 @@ Show
     MinimapIcon 0 Red Square
     PlayEffect Red
 
+# ADD LINE: Map Tier = 17
+Show
+    MapTier = 17
+    Class "Maps"
+    SetTextColor 74 0 160 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 74 0 160 255
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 Red Square
+    PlayEffect Red
+    CustomAlertSound "money.mp3"
+
 Show
     MapTier = 16
     Rarity <= Rare
@@ -1911,6 +2235,7 @@ Show
 
 Show
     Corrupted True
+    MapTier >= 14
     Rarity >= Rare
     Class "Maps"
     SetBackgroundColor 210 0 0 150
@@ -2031,15 +2356,14 @@ Show # value
 #    DisableDropSound
 
 # ADD LINE: AreaLevel >= 82
-Show # value
-	AreaLevel >= 82
-    Rarity = Unique
-    SetBorderColor 128 64 0 255
-    SetFontSize 25
-    DisableDropSound
-    MinimapIcon 0 Brown Square
-    PlayEffect Brown Temp
-    CustomAlertSound "d2_1.wav"
+#Show # value
+#    Rarity = Unique
+#    SetBorderColor 128 64 0 255
+#    SetFontSize 25
+#    DisableDropSound
+#    MinimapIcon 0 Brown Square
+#    PlayEffect Brown Temp
+#    CustomAlertSound "d2_1.wav"
 
 Show # value
     Rarity = Unique
@@ -2080,16 +2404,16 @@ Show
     SetTextColor 127 255 212 255
     SetBackgroundColor 127 127 127 222
     SetBorderColor 127 255 212 255
-    SetFontSize 40
+    SetFontSize 42
     DisableDropSound
-    CustomAlertSound "uh_uh.mp3"
 	MinimapIcon 1 Pink Pentagon
-	PlayEffect Pink
+    PlayEffect Pink
+    CustomAlertSound "uh_uh.mp3"
 
 # Currency Stacks
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Orb of Alchemy"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2099,7 +2423,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Chromatic Orb"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2109,7 +2433,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Orb of Chance"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2119,7 +2443,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Jeweller's Orb"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2129,7 +2453,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 5
+    StackSize >= 10
     BaseType "Orb of Transmutation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2139,7 +2463,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 5
+    StackSize >= 10
     BaseType "Orb of Augmentation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2149,7 +2473,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 7
+    StackSize >= 15
     BaseType "Scroll of Wisdom"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2158,7 +2482,7 @@ Show
     DisableDropSound
 
 Show
-    StackSize >= 7
+    StackSize >= 15
     BaseType "Portal Scroll"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2167,7 +2491,7 @@ Show
     DisableDropSound
 
 Show
-    StackSize >= 5
+    StackSize >= 10
     BaseType "Armourer's Scrap"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2176,65 +2500,13 @@ Show
     DisableDropSound
 
 Show
-    StackSize >= 5
+    StackSize >= 10
     BaseType "Blacksmith's Whetstone"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
     SetBorderColor 0 0 0 255
     SetFontSize 35
     DisableDropSound
-
-# Leveling Currency
-
-# ADD LINE: AreaLevel <= 67
-Show
-	AreaLevel <= 67
-    BaseType "Chaos Orb" "Gemcutter's Prism" "Blessed Orb" "Regal Orb" "Vaal Orb" "Orb of Scouring" "Orb of Alchemy" "Orb of Alteration" "Orb of Fusing" "Orb of Chance"
-    SetTextColor 0 128 0 255
-    SetBackgroundColor 255 255 255 255
-    SetBorderColor 0 128 0 255
-    SetFontSize 45
-    DisableDropSound
-    MinimapIcon 0 White Circle
-    PlayEffect White
-    CustomAlertSound "gold.wav"
-
-# ADD LINE: AreaLevel <= 67
-Show
-	AreaLevel <= 67
-    BaseType "Orb of Chance" "Jeweller's Orb" "Chromatic Orb" "Orb of Transmutation" "Orb of Augmentation"
-    SetTextColor 0 128 0 255
-    SetBackgroundColor 255 255 255 255
-    SetBorderColor 0 128 0 255
-    SetFontSize 40
-    PlayAlertSound 11 99
-    DisableDropSound
-    MinimapIcon 0 White Circle
-    PlayEffect White Temp
-
-# ADD LINE: AreaLevel <= 23
-Show
-	AreaLevel <= 23
-    BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
-    SetTextColor 0 128 0 255
-    SetBackgroundColor 255 255 255
-    SetBorderColor 0 128 0 255
-    SetFontSize 40
-    MinimapIcon 1 White Circle
-    PlayEffect Green
-    PlayAlertSound 11 99
-    DisableDropSound
-
-# ADD LINE: AreaLevel <= 18
-Show
-	AreaLevel <= 18
-    BaseType "Scroll of Wisdom" "Portal Scroll"
-    SetTextColor 0 128 0 255
-    SetBackgroundColor 255 255 255
-    SetBorderColor 0 128 0 255
-    SetFontSize 40
-    DisableDropSound
-    PlayEffect Green Temp
 
 # Currency Shards
 
@@ -2280,6 +2552,7 @@ Show
 
 # ADD LINE: AreaLevel <= 79
 Show
+	AreaLevel <= 79
     BaseType "Chaos Shard" "Regal Shard" "Horizon Shard"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2287,7 +2560,8 @@ Show
     SetFontSize 35
 
 # ADD LINE: AreaLevel <= 68
-Hide
+Show
+	AreaLevel <= 68
     BaseType "Alchemy Shard" "Binding Shard" "Engineer's Shard"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2295,7 +2569,8 @@ Hide
     SetFontSize 33
 
 # ADD LINE: AreaLevel <= 68
-Hide
+Show
+	AreaLevel <= 68
     BaseType "Alteration Shard" "Transmutation Shard" "Shard"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2304,87 +2579,95 @@ Hide
 
 # Filter Currency
 
-Hide
-    BaseType "Orb of Chance"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
-    SetFontSize 40
-    DisableDropSound
+#Hide
+#    BaseType "Orb of Horizons"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 40
+#    DisableDropSound
 
-Hide
-    BaseType "Jeweller's Orb"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
-    SetFontSize 40
-    DisableDropSound
+#Hide
+#    BaseType "Orb of Chance"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 40
+#    DisableDropSound
 
-Hide
-    BaseType "Chromatic Orb"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
-    SetFontSize 40
-    DisableDropSound
-    PlayEffect Green Temp
+#Hide
+#    BaseType "Jeweller's Orb"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 40
+#    DisableDropSound
 
-# ADD LINE: AreaLevel <= 77
-Hide
-    BaseType "Orb of Transmutation"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
-    SetFontSize 40
-    DisableDropSound
-
-# ADD LINE: AreaLevel <= 77
-Hide
-    BaseType "Orb of Augmentation"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
-    SetFontSize 35
-    DisableDropSound
-    PlayEffect Green Temp
+#Hide
+#    BaseType "Chromatic Orb"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 40
+#    DisableDropSound
+#    PlayEffect Green Temp
 
 # ADD LINE: AreaLevel <= 77
-Hide
-    BaseType "Blacksmith's Whetstone"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
-    SetFontSize 35
-    DisableDropSound
-    PlayEffect Green Temp
+#Hide
+#    BaseType "Orb of Transmutation"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 40
+#    DisableDropSound
 
 # ADD LINE: AreaLevel <= 77
-Hide
-    BaseType "Armourer's Scrap"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
-    SetFontSize 35
-    DisableDropSound
-    PlayEffect Green Temp
+#Hide
+#    BaseType "Orb of Augmentation"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 35
+#    DisableDropSound
+#    PlayEffect Green Temp
+
+# ADD LINE: AreaLevel <= 77
+#Hide
+#    BaseType "Blacksmith's Whetstone"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 35
+#    DisableDropSound
+#    PlayEffect Green Temp
+
+# ADD LINE: AreaLevel <= 77
+#Hide
+#    BaseType "Armourer's Scrap"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 35
+#    DisableDropSound
+#    PlayEffect Green Temp
 
 # ADD LINE: AreaLevel <= 75
-Hide
-    BaseType "Scroll of Wisdom"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
-    SetFontSize 35
-    DisableDropSound
+#Hide
+#    BaseType "Scroll of Wisdom"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 35
+#    DisableDropSound
 
 # ADD LINE: AreaLevel <= 75
-Hide
-    BaseType "Portal Scroll"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
-    SetFontSize 35
-    DisableDropSound
+#Hide
+#    BaseType "Portal Scroll"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 35
+#    DisableDropSound
 
 # Currency
 
@@ -2455,24 +2738,22 @@ Show
 
 Show
     Class "Stackable Currency"
-    BaseType "Blighted Scouting Report"
-    SetTextColor 74 230 58
-    SetBackgroundColor 0 70 100 190
-    SetBorderColor 74 230 58
-    SetFontSize 42
-    DisableDropSound
-    PlayEffect Green Temp
-
-Show
-    Class "Stackable Currency"
-    BaseType "Singular Scouting Report" "Otherworldly Scouting Report" "Comprehensive Scouting Report" "Vaal Scouting Report" "Delirious Scouting Report" "Operative's Scouting Report" "Influenced Scouting Report" "Explorer's Scouting Report"
+    BaseType "Influenced Scouting Report" "Singular Scouting Report"
     SetTextColor 74 230 58
     SetBackgroundColor 0 70 100 255
     SetBorderColor 74 230 58
-    SetFontSize 42
+    SetFontSize 40
+    PlayAlertSoundPositional 4 200
     DisableDropSound
-    MinimapIcon 0 Green Hexagon
     PlayEffect Green
+
+Show
+    Class "Stackable Currency"
+    BaseType "Scouting Report"
+    SetTextColor 74 230 58
+    SetBackgroundColor 0 70 100 255
+    SetBorderColor 74 230 58
+    DisableDropSound
 
 Show
     Class "Stackable Currency"
@@ -2602,6 +2883,7 @@ Show
     SetBorderColor 134 115 161 255
     SetFontSize 32
     DisableDropSound
+    MinimapIcon 2 White Circle
     PlayEffect White Temp
 
 Show
@@ -2612,6 +2894,7 @@ Show
     SetBorderColor 134 115 161 255
     SetFontSize 32
     DisableDropSound
+    MinimapIcon 2 White Circle
     PlayEffect White Temp
 
 Show
@@ -2829,8 +3112,8 @@ Show
 Show
     Sockets = 6
     SocketGroup "WWWWWW"
-    SetTextColor 255 255 255 255
-    SetBackgroundColor 0 128 0 255
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 255 255 255 255
     SetBorderColor 255 255 255 255
     SetFontSize 40
     DisableDropSound
@@ -3100,7 +3383,7 @@ Show
     SetFontSize 45
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
-    CustomAlertSound "nice.mp3"
+    CustomAlertSound "BBC.mp3"
 
 Show
     Class "Map Fragments"
@@ -3111,7 +3394,7 @@ Show
     SetFontSize 43
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
-    CustomAlertSound "nice.mp3"
+    CustomAlertSound "BBC.mp3"
 
 Show
     Class "Map Fragments"
@@ -3165,6 +3448,17 @@ Show
     CustomAlertSound "money.mp3"
 
 # Gems
+
+# ADD LINE: TransfiguredGem True
+Show
+	TransfiguredGem True
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 50 230 100
+    SetBorderColor 255 255 255 255
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 Green Diamond
+    PlayEffect Green
 
 Show
     Class "Skill Gem" "Support Gem"
@@ -3268,7 +3562,7 @@ Show # Gems
     SetFontSize 40
 
 Show # Gems
-    Quality >= 20
+    Quality >= 18
     Class "Skill Gem" "Support Gem"
     SetBorderColor 27 162 155
     SetFontSize 35
@@ -3356,7 +3650,8 @@ Show
     SetFontSize 40
 
 # ADD LINE: AreaLevel < 75
-Hide
+Show
+	AreaLevel < 75
     Quality >= 5
     Rarity = Normal
     Class "Hybrid Flasks" "Life Flasks" "Mana Flasks"
@@ -3378,14 +3673,22 @@ Show
 	AreaLevel < 69
     Class "Flasks"
     SetBorderColor 255 255 255 255
-    SetFontSize 40
 
 # Divination Cards
 
 # HIDE
-Hide
+Show
     Class "Divination Card"
-	BaseType == "A Mother's Parting Gift" "Alivia's Grace" "Audacity" "Boundless Realms" "Call to the First Ones" "Cartographer's Delight" "Dark Temptation" "Destined to Crumble" "Forbidden Power" "Grave Knowledge" "Lantador's Lost Love" "Lost Worlds" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Scholar of the Seas" "Struck by Lightning" "The Adventuring Spirit" "The Archmage's Right Hand" "The Arena Champion" "The Army of Blood" "The Beast" "The Betrayal" "The Blazing Fire" "The Calling" "The Carrion Crow" "The Conduit" "The Cursed King" "The Deceiver" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Feast" "The Fletcher" "The Forsaken" "The Fox in the Brambles" "The Harvester" "The Hermit" "The Incantation" "The Inoculated" "The Insatiable" "The Jester" "The Journalist" "The King's Blade" "The Lich" "The Lord of Celebration" "The Lover" "The Lunaris Priestess" "The Master" "The Metalsmith's Gift" "The Mountain" "The Oath" "The Opulent" "The Pack Leader" "The Rabid Rhoa" "The Return of the Rat" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Siren" "The Summoner" "The Sun" "The Surgeon" "The Surveyor" "The Sword King's Salute" "The Throne" "The Trial" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolf's Shadow" "Thirst for Knowledge" "Thunderous Skies" "Treasure Hunter" "Turn the Other Cheek" "Vile Power"
+    BaseType "The Demoness"
+    SetTextColor 255 255 255 199
+    SetBackgroundColor 0 0 255 199
+    SetBorderColor 0 0 255 199
+    SetFontSize 30
+
+# HIDE
+Show
+    Class "Divination Card"
+    BaseType "A Mother's Parting Gift" "Alivia's Grace" "Audacity" "Boundless Realms" "Call to the First Ones" "Cartographer's Delight" "Dark Temptation" "Destined to Crumble" "Forbidden Power" "Grave Knowledge" "Lantador's Lost Love" "Lost Worlds" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Scholar of the Seas" "Struck by Lightning" "The Adventuring Spirit" "The Archmage's Right Hand" "The Arena Champion" "The Army of Blood" "The Beast" "The Betrayal" "The Blazing Fire" "The Calling" "The Carrion Crow" "The Conduit" "The Cursed King" "The Deceiver" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Endurance" "The Feast" "The Fletcher" "The Forsaken" "The Fox in the Brambles" "The Harvester" "The Hermit" "The Incantation" "The Inoculated" "The Insatiable" "The Jester" "The Journalist" "The King's Blade" "The Lich" "The Lord of Celebration" "The Lover" "The Lunaris Priestess" "The Master" "The Metalsmith's Gift" "The Mountain" "The Oath" "The Opulent" "The Pack Leader" "The Rabid Rhoa" "The Return of the Rat" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Siren" "The Summoner" "The Sun" "The Surgeon" "The Surveyor" "The Sword King's Salute" "The Throne" "The Trial" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "The Wolf's Shadow" "Thirst for Knowledge" "Thunderous Skies" "Treasure Hunter" "Turn the Other Cheek"
     SetTextColor 255 255 255 199
     SetBackgroundColor 0 0 255 199
     SetBorderColor 0 0 255 199
@@ -3394,7 +3697,7 @@ Hide
 # TOPKEK
 Show
     Class "Divination Card"
-	BaseType "A Fate Worse Than Death" "Anarchy's Price" "Assassin's Gift" "Auspicious Ambitions" "Beauty Through Death" "Broken Promises" "Brother's Gift" "Brother's Stash" "Burning Blood" "Choking Guilt" "Desecrated Virtue" "Divine Beauty" "Doryani's Epiphany" "Duality" "Eternal Bonds" "Fire Of Unknown Origin" "Gemcutter's Mercy" "Home" "House of Mirrors" "I See Brothers" "Imperfect Memories" "Love Through Ice" "Luminous Trove" "Magnum Opus" "Matryoshka" "Misery in Darkness" "Monochrome" "Remembrance" "Seven Years Bad Luck" "Silence and Frost" "Succor of the Sinless" "The Apothecary" "The Artist" "The Cheater" "The Damned" "The Demon" "The Destination" "The Doctor" "The Emptiness" "The Endless Darkness" "The Enlightened" "The Eye of Terror" "The Fiend" "The Greatest Intentions" "The Gulf" "The Immortal" "The Insane Cat" "The Last One Standing" "The One That Got Away" "The Price of Devotion" "The Price of Loyalty" "The Samurai's Eye" "The Sephirot" "The Shieldbearer" "The World Eater" "Unrequited Love" "Wealth and Power"
+    BaseType "House of Mirrors" "Unrequited Love" "The Price of Devotion" "The Immortal" "The Apothecary" "Fire Of Unknown Origin" "Luminous Trove" "Beauty Through Death" "Choking Guilt" "Brother's Gift" "The Cheater" "The Insane Cat" "I See Brothers" "Seven Years Bad Luck" "The Demon" "The Endless Darkness" "Love Through Ice" "Desecrated Virtue" "Matryoshka"
     SetTextColor 0 0 255 255
     SetBackgroundColor 255 255 255 255
     SetBorderColor 0 0 255 255
@@ -3407,7 +3710,7 @@ Show
 # BIGDOG
 Show
     Class "Divination Card"
-	BaseType "A Familiar Call" "A Modest Request" "A Stone Perfected" "Abandoned Wealth" "Akil's Prophecy" "Alluring Bounty" "Altered Perception" "Arrogance of the Vaal" "Bijoux" "Brotherhood in Exile" "Costly Curio" "Darker Half" "Deadly Joy" "Dying Light" "Echoes of Love" "Etched in Blood" "Fateful Meeting" "From Bone to Ashes" "Further Invention" "Gift of Asenath" "Hunter's Reward" "Nook's Crown" "Peaceful Moments" "Poisoned Faith" "Pride of the First Ones" "Prometheus' Armoury" "Rebirth and Renewal" "Something Dark" "Soul Quenched" "The Aspirant" "The Astromancer" "The Awakened" "The Bitter Blossom" "The Catch" "The Chosen" "The Craving" "The Dragon's Heart" "The Dreamer" "The Dungeon Master" "The Eldritch Decay" "The Enforcer" "The Enthusiasts" "The Eternal War" "The Fishmonger" "The Forgotten Treasure" "The Fortunate" "The Garish Power" "The Hive of Knowledge" "The Hook" "The Last Supper" "The Leviathan" "The Life Thief" "The Long Con" "The Nurse" "The Old Man" "The Price of Prescience" "The Primordial" "The Prince of Darkness" "The Progeny of Lunaris" "The Rusted Bard" "The Sacrifice" "The Shepherd's Sandals" "The Shortcut" "The Soul" "The Vast" "The Wedding Gift" "The White Knight" "Tranquillity" "Unchained" "Void of the Elements" "Who Asked" "Winter's Embrace"
+    BaseType "Succor of the Sinless" "The Gulf" "Auspicious Ambitions" "The Samurai's Eye" "The Doctor" "The Sephirot" "Wealth and Power" "Brother's Stash" "Imperfect Memories" "The Dragon's Heart" "The Price of Loyalty" "The Destination" "The Greatest Intentions" "The Queen" "Divine Beauty" "Winter's Embrace" "Broken Promises" "Magnum Opus" "The Fiend" "Assassin's Gift" "The Shieldbearer" "The Sacrifice" "The Artist" "Darker Half"
     SetTextColor 255 255 255 255
     SetBackgroundColor 0 0 255 255
     SetBorderColor 255 255 255 255
@@ -3415,56 +3718,7 @@ Show
     DisableDropSound
     MinimapIcon 0 Blue Square
     PlayEffect Blue
-    CustomAlertSound "RV_DOGS.mp3"
-
-# NOICE
-Show
-    Class "Divination Card"
-	BaseType == "A Chilling Wind" "A Dusty Memory" "A Note in the Wind" "Astral Protection" "Atziri's Arsenal" "Azyran's Reward" "Baited Expectations" "Boon of the First Ones" "Bowyer's Dream" "Brush, Paint and Palette" "Chaotic Disposition" "Chasing Risk" "Checkmate" "Council of Cats" "Dark Dreams" "Deathly Designs" "Dementophobia" "Desperate Crusade" "Dialla's Subjugation" "Divine Justice" "Draped in Dreams" "Emperor of Purity" "Ever-Changing" "Guardian's Challenge" "Haunting Shadows" "Immortal Resolve" "Judging Voices" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Last Hope" "Lethean Temptation" "Lingering Remnants" "Mawr Blaidd" "Parasitic Passengers" "Rebirth" "The Academic" "The Avenger" "The Bones" "The Breach" "The Cartographer" "The Celestial Justicar" "The Celestial Stone" "The Dapper Prodigy" "The Escape" "The Ethereal" "The Eye of the Dragon" "The Finishing Touch" "The Hale Heart" "The Landing" "The Mad King" "The Magma Crab" "The Obscured" "The Offering" "The Pact" "The Patient" "The Polymath" "The Porcupine" "The Professor" "The Rabbit's Foot" "The Risk" "The Rite of Elements" "The Road to Power" "The Saint's Treasure" "The Scout" "The Skeleton" "The Spark and the Flame" "The Strategist" "The Transformation" "The Tumbleweed" "The Undaunted" "The Undisputed" "The Unexpected Prize" "The Union" "The Valkyrie" "The Void" "The Warlord" "The Wilted Rose" "The Wretched" "Underground Forest"
-    SetTextColor 255 255 255 255
-    SetBackgroundColor 0 0 255 255
-    SetBorderColor 255 255 255 255
-    SetFontSize 42
-    DisableDropSound
-    MinimapIcon 1 Blue Square
-    PlayEffect Blue
-    CustomAlertSound "nice.mp3"
-
-# CURRENCY
-Show
-    Class "Divination Card"
-	BaseType == "A Sea of Blue" "Acclimatisation" "Ambitious Obsession" "Buried Treasure" "Cameria's Cut" "Demigod's Wager" "Disdain" "Emperor's Luck" "Harmony of Souls" "Humility" "Imperial Legacy" "Lucky Connections" "Lucky Deck" "Man With Bear" "More is Never Enough" "No Traces" "Sambodhi's Vow" "Society's Remorse" "The Cacophony" "The Card Sharp" "The Chains that Bind" "The Dark Mage" "The Deal" "The Fool" "The Heroic Shot" "The Hoarder" "The Innocent" "The Inventor" "The Journey" "The Price of Protection" "The Seeker" "The Side Quest" "The Tinkerer's Table" "The Wrath" "Three Faces in the Dark" "Vanity" "Vinia's Token"
-    SetTextColor 255 255 255 199
-    SetBackgroundColor 0 0 255 199
-    SetBorderColor 0 0 255 199
-    SetFontSize 37
-    PlayAlertSoundPositional 14 79
-    MinimapIcon 1 Blue Circle
-
-# SMOLL
-Show
-    Class "Divination Card"
-    BaseType "==" "A Dab of Ink" "Alone in the Darkness" "Assassin's Favour" "Azure Rage" "Blind Venture" "Broken Truce" "Cursed Words" "Death" "Doedre's Madness" "Dying Anguish" "Earth Drinker" "Eldritch Perfection" "Endless Night" "Gift of the Gemling Queen" "Glimmer of Hope" "Heterochromia" "Hope" "Hubris" "Hunter's Resolve" "Jack in the Box" "Left to Fate" "Light and Truth" "Lysah's Respite" "Merciless Armament" "Mitts" "Perfection" "Prejudice" "Pride Before the Fall" "Reckless Ambition" "Sambodhi's Wisdom" "Shard of Fate" "Terrible Secret of Space" "The Admirer" "The Aesthete" "The Battle Born" "The Bear Woman" "The Blessing of Moosh" "The Body" "The Brawny Battle Mage" "The Brittle Emperor" "The Cache" "The Cataclysm" "The Coming Storm" "The Darkest Dream" "The Deep Ones" "The Doppelganger" "The Dreamland" "The Easy Stroll" "The Encroaching Darkness" "The Explorer" "The Fathomless Depths" "The Formless Sea" "The Forward Gaze" "The Fox" "The Gentleman" "The Gladiator" "The Golden Era" "The Hunger" "The Jeweller's Boon" "The King's Heart" "The Lion" "The Lord in Black" "The Mercenary" "The Messenger" "The Mind's Eyes" "The Offspring" "The One With All" "The Penitent" "The Poet" "The Queen" "The Realm" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Thaumaturgist" "The Tower" "The Traitor" "The Twilight Moon" "The Tyrant" "The Whiteout" "The Wind" "The Wolf" "The Wolf's Legacy" "The Wolven King's Bite" "The Wolverine" "Time-Lost Relic" "Triskaidekaphobia" "Volatile Power"
-    SetTextColor 255 255 255 199
-    SetBackgroundColor 0 0 255 199
-    SetBorderColor 0 0 255 199
-    SetFontSize 25
-
-# SMOLL
-Show
-    Class "Divination Card"
-    BaseType "==" "Boon of Justice" "Coveted Possession" "Gemcutter's Promise" "Her Mask" "Loyalty" "Rain of Chaos" "The Catalyst" "The Flora's Gift" "The Gambler" "The Gemcutter" "The Master Artisan" "The Puzzle" "The Scholar" "The Survivalist" "The Tireless Extractor" "Three Voices"
-    SetTextColor 255 255 255 199
-    SetBackgroundColor 0 0 255 199
-    SetBorderColor 0 0 255 199
-    SetFontSize 20
-
-Show
-    BaseType "Stacked Deck"
-    SetTextColor 255 255 255 199
-    SetBackgroundColor 0 0 255 199
-    SetBorderColor 255 255 255 0
-    SetFontSize 37
+    CustomAlertSound "RV_SUPER_IDOL.mp3"
 
 Show
     Class "Divination Card"
@@ -3472,6 +3726,13 @@ Show
     SetBackgroundColor 0 0 255 199
     SetBorderColor 0 0 255 199
     SetFontSize 35
+    MinimapIcon 2 Blue Square
+
+Show
+    BaseType "Stacked Deck"
+    SetTextColor 255 255 255 199
+    SetBackgroundColor 0 0 255 199
+    SetBorderColor 255 255 255 0
 
 # Corrupted & Identified
 
@@ -3701,7 +3962,7 @@ Show
     DisableDropSound
     CustomAlertSound "d2_1.wav"
 
-Hide
+Show
     Identified True
     HasExplicitMod "of Aisling's Veil"
     SetTextColor 0 128 0 255
@@ -3710,7 +3971,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "of Cameria's Veil"
     SetTextColor 0 128 0 255
@@ -3719,7 +3980,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Elreon's Veiled"
     SetTextColor 0 128 0 255
@@ -3728,7 +3989,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Gravicius' Veiled"
     SetTextColor 0 128 0 255
@@ -3737,7 +3998,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Guff's Veiled"
     SetTextColor 0 128 0 255
@@ -3746,7 +4007,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Haku's Veiled"
     SetTextColor 0 128 0 255
@@ -3755,7 +4016,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "of Hillock's Veil"
     SetTextColor 0 128 0 255
@@ -3764,7 +4025,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "It That Fled's Veiled"
     SetTextColor 0 128 0 255
@@ -3773,7 +4034,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "of Janus' Veil"
     SetTextColor 0 128 0 255
@@ -3791,7 +4052,7 @@ Show
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Korell's Veiled"
     SetTextColor 0 128 0 255
@@ -3800,7 +4061,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Leo's Veiled"
     SetTextColor 0 128 0 255
@@ -3809,7 +4070,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "of Riker's Veil"
     SetTextColor 0 128 0 255
@@ -3818,7 +4079,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Rin's Veiled"
     SetTextColor 0 128 0 255
@@ -3827,7 +4088,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Tora's Veiled"
     SetTextColor 0 128 0 255
@@ -3836,7 +4097,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Vagan's Veiled"
     SetTextColor 0 128 0 255
@@ -3845,7 +4106,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Vorici's Veiled"
     SetTextColor 0 128 0 255
@@ -3854,7 +4115,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Flasks"
     HasExplicitMod "Veil"
@@ -3864,7 +4125,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Shields" "Quivers"
     HasExplicitMod "Veil"
@@ -3874,7 +4135,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Wands" "Sceptres" "Daggers" "Rune Dagger"
     HasExplicitMod "Veil"
@@ -3884,7 +4145,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "One Hand Axes" "One Hand Maces" "One Hand Swords" "One Hand Swords" "Claws"
     HasExplicitMod "Veil"
@@ -3894,7 +4155,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves" "Bows"
     HasExplicitMod "Veil"
@@ -3904,7 +4165,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Body Armours"
     HasExplicitMod "Veil"
@@ -3914,7 +4175,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Helmets"
     HasExplicitMod "Veil"
@@ -3924,7 +4185,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Boots"
     HasExplicitMod "Veil"
@@ -3934,7 +4195,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Gloves"
     HasExplicitMod "Veil"
@@ -3944,7 +4205,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Amulets"
     HasExplicitMod "Veil"
@@ -3954,7 +4215,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Rings"
     HasExplicitMod "Veil"
@@ -3964,7 +4225,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     Class "Belts"
     HasExplicitMod "Veil"
@@ -3974,7 +4235,7 @@ Hide
     SetFontSize 40
     DisableDropSound
 
-Hide
+Show
     Identified True
     HasExplicitMod "Veil"
     SetTextColor 0 128 0 255
@@ -4188,7 +4449,7 @@ Show
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     Class "Belts"
@@ -4297,7 +4558,7 @@ Show
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Profane Wand"
@@ -4306,7 +4567,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Profane Wand" "Heathen Wand" "Pagan Wand"
@@ -4315,7 +4576,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Pinnacle Tower Shield" "Colossal Tower Shield"
@@ -4324,7 +4585,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Harbinger Bow"
@@ -4333,7 +4594,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Spine Bow"
@@ -4342,7 +4603,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Imperial Bow"
@@ -4369,7 +4630,7 @@ Show
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Vile Arrow Quiver"
@@ -4387,7 +4648,7 @@ Show
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Vaal Axe"
@@ -4396,7 +4657,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Vaal Hatchet" "Siege Axe"
@@ -4405,7 +4666,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Gemini Claw"
@@ -4414,7 +4675,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Imperial Claw"
@@ -4423,7 +4684,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Jewelled Foil"
@@ -4432,7 +4693,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Corsair Sword" "Eternal Sword"
@@ -4441,7 +4702,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Sambar Sceptre"
@@ -4450,7 +4711,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Opal Sceptre"
@@ -4459,7 +4720,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Void Sceptre" "Opal Sceptre"
@@ -4468,7 +4729,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     Class "Rune Dagger"
@@ -4478,7 +4739,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     Class "Daggers"
@@ -4497,7 +4758,7 @@ Hide
 #    SetBorderColor 255 255 0 255
 #    SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Lacquered Buckler" "Imperial Buckler" "Crusader Buckler"
@@ -4506,7 +4767,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Supreme Spiked Shield"
@@ -4516,7 +4777,7 @@ Hide
     SetFontSize 40
 
 # T1 Shields.
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Titanium Spirit Shield"
@@ -4526,7 +4787,7 @@ Hide
     SetFontSize 40
 
 # T1 Shields.
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Harmonic Spirit Shield"
@@ -4535,7 +4796,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Fossilised Spirit Shield"
@@ -4544,7 +4805,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Archon Kite Shield"
@@ -4553,18 +4814,18 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-#Show
-#    Corrupted False
-#    Rarity = Rare
-#    BaseType "Astral Plate" "Vaal Regalia" "Assassin's Garb" "Zodiac Leather" "Glorious Plate"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 255 255 0
-#    SetBorderColor 255 255 0 255
-#    SetFontSize 40
-#    MinimapIcon 2 Yellow Square
+Show
+    Corrupted False
+    Rarity = Rare
+    BaseType "Astral Plate" "Vaal Regalia" "Assassin's Garb" "Zodiac Leather" "Glorious Plate"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 255 255 0
+    SetBorderColor 255 255 0 255
+    SetFontSize 40
+    MinimapIcon 2 Yellow Square
 
 # T1 Helmets
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Hubris Circlet" "Penitent Mask" "Archdemon Crown" "Blizzard Crown" "Sorcerer Gloves" "Sorcerer Boots"
@@ -4574,7 +4835,7 @@ Hide
     SetFontSize 40
 
 # T1 Helmets
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Penitent Mask" "Archdemon Crown" "Blizzard Crown"
@@ -4584,7 +4845,7 @@ Hide
     SetFontSize 40
 
 # T1 Helmets
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Nightmare Bascinet" "Praetor Crown" "Deicide Mask"
@@ -4594,7 +4855,7 @@ Hide
     SetFontSize 40
 
 # T1 Gloves
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Spiked Gloves" "Titan Gauntlets" "Gripped Gloves" "Sinistral Gloves" "Debilitation Gauntlets" "Fingerless Silk Gloves" "Nexus Gloves" "Sorcerer Gloves" "Apothecary's Gloves"
@@ -4604,7 +4865,7 @@ Hide
     SetFontSize 40
 
 # T1 Gloves
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
@@ -4614,7 +4875,7 @@ Hide
     SetFontSize 40
 
 # Base boots
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Brimstone Treads" "Titan Greaves" "Stormrider Boots" "Slink Boots" "Dreamquest Slippers" "Sorcerer Boots" "Two-Toned Boots"
@@ -4624,7 +4885,7 @@ Hide
     SetFontSize 40
 
 # T1 Boots
-Hide
+Show
     Corrupted False
     Rarity = Rare
     BaseType "Dragonscale Boots" "Crusader Boots" "Murder Boots"
@@ -4634,7 +4895,8 @@ Hide
     SetFontSize 40
 
 # ADD LINE: AreaLevel <= 78
-Hide
+Show
+	AreaLevel <= 78
     Corrupted False
     Rarity = Rare
     BaseType "Fossilised Spirit Shield" "Thorium Spirit Shield" "Ivory Spirit Shield"
@@ -4642,7 +4904,8 @@ Hide
     SetBorderColor 255 255 0 255
 
 # ADD LINE: AreaLevel <= 78
-Hide
+Show
+	AreaLevel <= 78
     Corrupted False
     Rarity = Rare
     BaseType "Eternal Burgonet" "Sinner Tricorne" "Mind Cage" "Fluted Bascinet" "Prophet Crown" "Vaal Mask"
@@ -4651,7 +4914,8 @@ Hide
     SetBorderColor 255 255 0 255
 
 # ADD LINE: AreaLevel <= 78
-Hide
+Show
+	AreaLevel <= 78
     Corrupted False
     Rarity = Rare
     BaseType "Vaal Gauntlets" "Stealth Gloves" "Arcanist Gloves" "Hydrascale Gauntlets" "Legion Gloves" "Assassin's Mitts"
@@ -4660,7 +4924,8 @@ Hide
     SetBorderColor 255 255 0 255
 
 # ADD LINE: AreaLevel < 78
-Hide
+Show
+	AreaLevel <= 78
     Rarity = Rare
     Class "Wands"
     SetTextColor 255 255 0 255
@@ -4669,16 +4934,17 @@ Hide
     DisableDropSound
 
 # ADD LINE: AreaLevel < 75
-Hide
-    Rarity = Rare
-    Class "Quivers"
-    SetTextColor 255 255 0 255
-    SetBackgroundColor 0 0 0 255
-    SetBorderColor 255 255 0 255
-    DisableDropSound
+#Show
+#    Rarity = Rare
+#    Class "Quivers"
+#    SetTextColor 255 255 0 255
+#    SetBackgroundColor 0 0 0 255
+#    SetBorderColor 255 255 0 255
+#    DisableDropSound
 
 # ADD LINE: AreaLevel <= 75
-Hide
+Show
+	AreaLevel <= 75
     Rarity = Rare
     Class "Helmets" "Gloves" "Boots"
     SetTextColor 255 255 0 255
@@ -4871,76 +5137,16 @@ Show
     SetBorderColor 255 255 255 255
 
 # ADD LINE: AreaLevel <= 72
-Hide
+Show
+	AreaLevel <= 72
     SocketGroup "RBG"
     SetBorderColor 255 255 255 255
 
 # ADD LINE: AreaLevel <= 46
-Hide
+Show
+	AreaLevel <= 46
     SocketGroup "RBG"
     SetBorderColor 255 255 255 255
-
-# Leveling Gear
-
-# ADD LINE: AreaLevel < 68
-Show
-	AreaLevel < 68
-    LinkedSockets >= 4
-    SetBorderColor 255 0 0 255
-    SetFontSize 38
-    PlayEffect Red Temp
-
-# ADD LINE: AreaLevel <= 23
-Show
-	AreaLevel <= 23
-    Class "Rings" "Belts" "Amulets"
-    SetBorderColor 255 0 0 255
-    SetFontSize 38
-    PlayEffect Red Temp
-
-# ADD LINE: AreaLevel <= 67
-Show
-	AreaLevel <= 67
-    Rarity = Magic
-    Class "Rings" "Belts" "Amulets"
-    SetBorderColor 255 255 255 255
-
-# ADD LINE: AreaLevel <= 23
-Show
-	AreaLevel <= 23
-    Class "Rings" "Belts" "Amulets"
-    SetBorderColor 255 255 255 255
-
-# ADD LINE: AreaLevel <= 23
-Show
-	AreaLevel <= 23
-    LinkedSockets >= 3
-    SetBorderColor 255 0 0 255
-    SetFontSize 37
-    PlayEffect Red Temp
-
-# ADD LINE: AreaLevel < 13
-Show
-	AreaLevel < 13
-    Rarity = Magic
-    Class "Boots"
-    SetBorderColor 255 255 255
-    SetFontSize 37
-
-# ADD LINE: AreaLevel <= 23
-Show
-	AreaLevel <= 23
-    Rarity = Magic
-    SetFontSize 32
-
-# ADD LINE: AreaLevel <= 13
-Show
-	AreaLevel <= 13
-    Rarity = Normal
-    SetBackgroundColor 0 0 0 125
-    SetFontSize 28
-
-# End
 
 Show
     Class "Amulets"

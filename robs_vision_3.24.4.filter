@@ -609,7 +609,7 @@ Show
     SetFontSize 42
     DisableDropSound
 
-Show
+Hide
     BaseType "Rogue's Marker"
     SetTextColor 0 128 0 255
     SetBackgroundColor 139 199 100
@@ -1261,9 +1261,10 @@ Show
     SetTextColor 0 0 0 255
     SetBackgroundColor 130 25 255 255
     SetBorderColor 0 0 0 255
-    SetFontSize 37
+    SetFontSize 40
+    MinimapIcon 2 White Circle
 
-Show
+Hide
     ItemLevel >= 86
     Rarity <= Rare
     Class "Rings"
@@ -1276,7 +1277,7 @@ Show
     PlayEffect Yellow
     CustomAlertSound "gold.wav"
 
-Show
+Hide
     ItemLevel >= 83
     Rarity <= Rare
     Class "Rings"
@@ -1285,7 +1286,7 @@ Show
     SetBorderColor 130 25 255 255
     SetFontSize 38
 
-Show
+Hide
     ItemLevel < 83
     Rarity <= Rare
     Class "Rings"
@@ -1884,6 +1885,19 @@ Show
     MinimapIcon 0 Red Square
     PlayEffect Red
 
+# ADD LINE: Map Tier = 17
+Show
+    MapTier = 17
+    Class "Maps"
+    SetTextColor 74 0 160 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 74 0 160 255
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 Red Square
+    PlayEffect Red
+    CustomAlertSound "money.mp3"
+
 Show
     MapTier = 16
     Rarity <= Rare
@@ -1911,6 +1925,7 @@ Show
 
 Show
     Corrupted True
+    MapTier >= 14
     Rarity >= Rare
     Class "Maps"
     SetBackgroundColor 210 0 0 150
@@ -1919,7 +1934,7 @@ Show
     DisableDropSound
     PlayEffect Red
 
-Show
+Hide
     MapTier <= 13
     Rarity <= Rare
     Class "Maps"
@@ -1928,7 +1943,7 @@ Show
     SetFontSize 37
     DisableDropSound
 
-Show
+Hide
     Class "Maps"
     SetBackgroundColor 127 0 0 150
     SetBorderColor 255 255 255 150
@@ -2062,14 +2077,14 @@ Show # value
     MinimapIcon 1 Yellow Star
     PlayEffect Yellow
 
-Show # value
-    LinkedSockets = 5
-    SetBackgroundColor 136 136 255 191
-    SetBorderColor 255 255 0 255
-    SetFontSize 40
-    PlayAlertSoundPositional 3 99
-    MinimapIcon 1 Yellow Star
-    PlayEffect Yellow
+#Show # value
+#    LinkedSockets = 5
+#    SetBackgroundColor 136 136 255 191
+#    SetBorderColor 255 255 0 255
+#    SetFontSize 40
+#    PlayAlertSoundPositional 3 99
+#    MinimapIcon 1 Yellow Star
+#    PlayEffect Yellow
 
 # Scarabs
 
@@ -2080,11 +2095,11 @@ Show
     SetTextColor 127 255 212 255
     SetBackgroundColor 127 127 127 222
     SetBorderColor 127 255 212 255
-    SetFontSize 40
+    SetFontSize 42
     DisableDropSound
+    MinimapIcon 1 Blue Triangle
+    PlayEffect Blue Temp
     CustomAlertSound "uh_uh.mp3"
-	MinimapIcon 1 Pink Pentagon
-	PlayEffect Pink
 
 # Currency Stacks
 
@@ -2099,7 +2114,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Chromatic Orb"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2109,7 +2124,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Orb of Chance"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2119,7 +2134,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 1
+    StackSize >= 3
     BaseType "Jeweller's Orb"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2129,7 +2144,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 5
+    StackSize >= 20
     BaseType "Orb of Transmutation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2139,7 +2154,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 5
+    StackSize >= 20
     BaseType "Orb of Augmentation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2149,7 +2164,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 7
+    StackSize >= 20
     BaseType "Scroll of Wisdom"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2158,7 +2173,7 @@ Show
     DisableDropSound
 
 Show
-    StackSize >= 7
+    StackSize >= 20
     BaseType "Portal Scroll"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2167,7 +2182,7 @@ Show
     DisableDropSound
 
 Show
-    StackSize >= 5
+    StackSize >= 20
     BaseType "Armourer's Scrap"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2176,7 +2191,7 @@ Show
     DisableDropSound
 
 Show
-    StackSize >= 5
+    StackSize >= 20
     BaseType "Blacksmith's Whetstone"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2303,6 +2318,14 @@ Hide
     SetFontSize 30
 
 # Filter Currency
+
+Hide
+    BaseType "Orb of Horizons"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
 Hide
     BaseType "Orb of Chance"
@@ -2602,6 +2625,7 @@ Show
     SetBorderColor 134 115 161 255
     SetFontSize 32
     DisableDropSound
+    MinimapIcon 2 White Circle
     PlayEffect White Temp
 
 Show
@@ -2612,6 +2636,7 @@ Show
     SetBorderColor 134 115 161 255
     SetFontSize 32
     DisableDropSound
+    MinimapIcon 2 White Circle
     PlayEffect White Temp
 
 Show
@@ -2798,7 +2823,7 @@ Show
     SetFontSize 42
     DisableDropSound
 
-Show
+Hide
     BaseType "Orb of Binding"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2884,7 +2909,7 @@ Show
     SetFontSize 35
     DisableDropSound
 
-Show
+Hide
     BaseType "Chaos Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2892,7 +2917,7 @@ Show
     SetFontSize 35
     DisableDropSound
 
-Show
+Hide
     BaseType "Horizon Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2900,7 +2925,7 @@ Show
     SetFontSize 35
     DisableDropSound
 
-Show
+Hide
     BaseType "Regal Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2908,7 +2933,7 @@ Show
     SetFontSize 35
     DisableDropSound
 
-Show
+Hide
     BaseType "Alteration Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -2916,7 +2941,7 @@ Show
     SetFontSize 33
     DisableDropSound
 
-Show
+Hide
     BaseType "Engineer's Shard"
     SetTextColor 255 255 255
     SetBackgroundColor 0 128 0 255
@@ -3268,24 +3293,24 @@ Show # Gems
     SetFontSize 40
 
 Show # Gems
-    Quality >= 20
+    Quality >= 18
     Class "Skill Gem" "Support Gem"
     SetBorderColor 27 162 155
     SetFontSize 35
 
-Show # Gems
+Hide # Gems
     Quality >= 14
     Class "Skill Gem" "Support Gem"
     SetBorderColor 27 162 155
     SetFontSize 35
 
-Show # Gems
+Hide # Gems
     Quality >= 13
     Class "Skill Gem" "Support Gem"
     SetBorderColor 27 162 155
     SetFontSize 35
 
-Show # Gems
+Hide # Gems
     Quality >= 5
     Class "Skill Gem" "Support Gem"
     SetBorderColor 27 162 155
@@ -3328,7 +3353,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Rarity = Magic
     Class "Utility Flasks"
     SetTextColor 0 0 0 255
@@ -3336,7 +3361,7 @@ Show
     SetBorderColor 136 136 255
     SetFontSize 40
 
-Show
+Hide
     Quality >= 20
     Class "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Utility Flasks"
     SetTextColor 136 136 255
@@ -3345,8 +3370,7 @@ Show
     SetFontSize 40
 
 # ADD LINE: AreaLevel < 82
-Show
-	AreaLevel < 82
+Hide
     Quality >= 10
     Rarity = Normal
     Class "Hybrid Flasks" "Life Flasks" "Mana Flasks"
@@ -3366,7 +3390,7 @@ Hide
     SetFontSize 39
 
 # ADD LINE: AreaLevel < 80
-Show
+Hide
     Class "Utility Flasks" "Critical Utility Flasks"
     SetTextColor 0 0 0 255
     SetBackgroundColor 184 218 242
@@ -3374,8 +3398,7 @@ Show
     SetFontSize 38
 
 # ADD LINE: AreaLevel < 69
-Show
-	AreaLevel < 69
+Hide
     Class "Flasks"
     SetBorderColor 255 255 255 255
     SetFontSize 40
@@ -3644,22 +3667,20 @@ Show
     SetFontSize 42
 
 # ADD LINE: HasSearingExarchImplicit >= 1
-Show
-	HasSearingExarchImplicit >= 1
-    ItemLevel <= 84
-    BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots" "Dragonscale Boots" "Crusader Boots" "Fugitive Boots" "Murder Boots" "Glorious Plate" "Zodiac Leather" "Vaal Regalia" "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Saintly Chainmail" "Sadist Garb" "Grasping Mail" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Sinner Tricorne" "Hubris Circlet" "Nightmare Bascinet" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Deicide Mask"
-    SetTextColor 255 200 0 200
-    SetBackgroundColor 128 0 128 200
-    SetBorderColor 255 200 0 200
-    SetFontSize 37
+#Hide
+#    ItemLevel <= 84
+#    BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots" "Dragonscale Boots" "Crusader Boots" "Fugitive Boots" "Murder Boots" "Glorious Plate" "Zodiac Leather" "Vaal Regalia" "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Saintly Chainmail" "Sadist Garb" "Grasping Mail" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Sinner Tricorne" "Hubris Circlet" "Nightmare Bascinet" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Deicide Mask"
+#    SetTextColor 255 200 0 200
+#    SetBackgroundColor 128 0 128 200
+#    SetBorderColor 255 200 0 200
+#    SetFontSize 37
 
 # ADD LINE: HasSearingExarchImplicit >= 1
-Show
-	HasSearingExarchImplicit >= 1
-    SetTextColor 255 200 0 200
-    SetBackgroundColor 128 0 128 200
-    SetBorderColor 255 200 0 200
-    SetFontSize 20
+#Hide
+#    SetTextColor 255 200 0 200
+#    SetBackgroundColor 128 0 128 200
+#    SetBorderColor 255 200 0 200
+#    SetFontSize 20
 
 # ADD LINE: HasEaterOfWorldsImplicit >= 1
 Show
@@ -3672,26 +3693,24 @@ Show
     SetFontSize 42
 
 # ADD LINE: HasEaterOfWorldsImplicit >= 1
-Show
-	HasEaterOfWorldsImplicit >= 1
-    ItemLevel <= 84
-    BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots" "Dragonscale Boots" "Crusader Boots" "Fugitive Boots" "Murder Boots" "Glorious Plate" "Zodiac Leather" "Vaal Regalia" "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Saintly Chainmail" "Sadist Garb" "Grasping Mail" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Sinner Tricorne" "Hubris Circlet" "Nightmare Bascinet" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Deicide Mask"
-    SetTextColor 255 200 0 200
-    SetBackgroundColor 128 0 128 200
-    SetBorderColor 255 200 0 200
-    SetFontSize 37
+#Hide
+#    ItemLevel <= 84
+#    BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots" "Dragonscale Boots" "Crusader Boots" "Fugitive Boots" "Murder Boots" "Glorious Plate" "Zodiac Leather" "Vaal Regalia" "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Saintly Chainmail" "Sadist Garb" "Grasping Mail" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Sinner Tricorne" "Hubris Circlet" "Nightmare Bascinet" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Deicide Mask"
+#    SetTextColor 255 200 0 200
+#    SetBackgroundColor 128 0 128 200
+#    SetBorderColor 255 200 0 200
+#    SetFontSize 37
 
 # ADD LINE: HasEaterOfWorldsImplicit >= 1
-Show
-	HasEaterOfWorldsImplicit >= 1
-    SetTextColor 255 200 0 200
-    SetBackgroundColor 128 0 128 200
-    SetBorderColor 255 200 0 200
-    SetFontSize 20
+#Hide
+#    SetTextColor 255 200 0 200
+#    SetBackgroundColor 128 0 128 200
+#    SetBorderColor 255 200 0 200
+#    SetFontSize 20
 
 # Veiled
 
-Show
+Hide
     Identified True
     HasExplicitMod "Elreon's Veiled" "Gravicius' Veiled" "Perandus'" "Catarina's Veiled"
     SetTextColor 0 128 0 255
@@ -4178,7 +4197,7 @@ Show
     MinimapIcon 0 Yellow Square
     PlayEffect Yellow Temp
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Belts"
@@ -4198,7 +4217,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Rings"
@@ -4208,7 +4227,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Rings"
@@ -4218,7 +4237,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Rings"
@@ -4238,7 +4257,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Rings"
@@ -4248,7 +4267,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Amulets"
@@ -4258,7 +4277,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     Class "Amulets"
@@ -4269,8 +4288,7 @@ Show
     SetFontSize 40
 
 # ADD LINE: AreaLevel < 69
-Show
-	AreaLevel < 69
+Hide
     Corrupted False
     Rarity = Rare
     Class "Rings" "Belts" "Amulets"
@@ -4279,7 +4297,7 @@ Show
     SetBorderColor 0 0 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Convoking Wand"
@@ -4288,7 +4306,7 @@ Show
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Imbued Wand"
@@ -4351,7 +4369,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Feathered Arrow Quiver"
@@ -4360,7 +4378,7 @@ Show
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Primal Arrow Quiver"
@@ -4378,7 +4396,7 @@ Hide
     SetBorderColor 255 255 0 255
     SetFontSize 40
 
-Show
+Hide
     Corrupted False
     Rarity = Rare
     BaseType "Broadhead Arrow Quiver"
@@ -4801,7 +4819,7 @@ Show
     SetBorderColor 255 255 119
     SetFontSize 42
 
-Show
+Hide
     ItemLevel >= 83
     Rarity = Rare
     Class "Abyss Jewel"
@@ -4811,7 +4829,7 @@ Show
     SetFontSize 42
 
 # #FF001428
-Show
+Hide
     ItemLevel >= 83
     Rarity <= Magic
     Class "Abyss Jewel"
@@ -4820,7 +4838,7 @@ Show
     SetBorderColor 136 136 255
     SetFontSize 40
 
-Show
+Hide
     Rarity = Rare
     Class "Abyss Jewel"
     SetTextColor 255 255 119
@@ -4828,7 +4846,7 @@ Show
     SetBorderColor 120 120 0 255
     SetFontSize 37
 
-Show
+Hide
     Rarity <= Magic
     Class "Abyss Jewel"
     SetTextColor 136 136 255
@@ -4836,7 +4854,7 @@ Show
     SetBorderColor 120 120 0 255
     SetFontSize 37
 
-Show
+Hide
     Rarity = Rare
     Class "Jewel"
     SetTextColor 255 255 0 255
@@ -4845,7 +4863,7 @@ Show
     SetFontSize 42
 
 # ADD LINE: AreaLevel < 68
-Show
+Hide
     Rarity <= Magic
     Class "Jewel"
     SetTextColor 136 136 255
