@@ -78,7 +78,7 @@ Show
     SetBackgroundColor 255 255 255 255
     SetBorderColor 0 128 0 255
     MinimapIcon 1 White Circle
-    CustomAlertSound "MGS.mp3"
+    CustomAlertSound "RV_orb_of_augment.wav"
 
 # ADD LINE: AreaLevel <= 67
 Show
@@ -255,8 +255,7 @@ Show
 
 # ADD LINE: AreaLevel < 69
 Show
-	AreaLevel < 69
-    Corrupted False
+    Corrupted True
     Rarity = Rare
     SetBackgroundColor 0 0 0 111
     SetBorderColor 210 0 0
