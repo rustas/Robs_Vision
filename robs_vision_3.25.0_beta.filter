@@ -32,13 +32,12 @@ Show
     SetFontSize 30
 
 # ADD LINE: AreaLevel >= 79
-Hide
-	AreaLevel >= 79
-    Class "Stackable Currency"
-    BaseType "Portal Scroll" "Scroll of Wisdom"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 0 128 0 255
-    SetBorderColor 0 0 0 255
+#Hide
+#    Class "Stackable Currency"
+#    BaseType "Portal Scroll" "Scroll of Wisdom"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 0 128 0 255
+#    SetBorderColor 0 0 0 255
 
 # ADD LINE: AreaLevel <= 23
 Show
@@ -230,7 +229,32 @@ Show
 #    SetBackgroundColor 255 255 255 255
 #    SetBorderColor 0 128 0 255
 
-# Linked Items
+# waow!
+
+# ADD LINE: CorruptedMods >= 2
+Show # value
+	CorruptedMods >= 2
+    Corrupted True
+    SetBackgroundColor 210 0 0
+    SetBorderColor 0 0 0 255
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 Red Star
+    PlayEffect Brown
+    CustomAlertSound "Wow.mp3"
+
+# ADD LINE: CorruptedMods >= 1
+Show # value
+	CorruptedMods >= 1
+    Corrupted True
+    Rarity >= Rare
+    SetBackgroundColor 210 0 0
+    SetBorderColor 0 0 0 255
+    SetFontSize 37
+    DisableDropSound
+    MinimapIcon 0 Red Star
+    PlayEffect Brown
+    CustomAlertSound "Wow.mp3"
 
 Show
     LinkedSockets = 5
@@ -255,6 +279,7 @@ Show
 
 # ADD LINE: AreaLevel < 69
 Show
+	AreaLevel < 69
     Corrupted True
     Rarity = Rare
     SetBackgroundColor 0 0 0 111
@@ -568,6 +593,12 @@ Show
 # ADD LINE: AreaLevel <= 67
 Show
 	AreaLevel <= 67
+    Class "Gems"
+    SetTextColor 27 162 155
+
+# ADD LINE: AreaLevel <= 67
+Show
+	AreaLevel <= 67
     Rarity = Rare
     SetTextColor 255 255 0 255
 
@@ -585,17 +616,6 @@ Show
     SetFontSize 28
 
 # League Specific: Affliction
-
-Show # currency
-    Class "Ember"
-    SetTextColor 210 0 0
-    SetBackgroundColor 255 116 0 255
-    SetBorderColor 210 0 0
-    SetFontSize 45
-    DisableDropSound
-    MinimapIcon 1 Red Circle
-    PlayEffect White
-    CustomAlertSound "nuts.mp3"
 
 Show
     FracturedItem True
@@ -2317,32 +2337,6 @@ Show
 
 # Unique
 
-# ADD LINE: CorruptedMods >= 2
-Show # value
-	CorruptedMods >= 2
-    Corrupted True
-    Rarity = Unique
-    SetBackgroundColor 150 0 0 200
-    SetBorderColor 175 96 37
-    SetFontSize 45
-    DisableDropSound
-    MinimapIcon 0 Brown Square
-    PlayEffect Brown
-    CustomAlertSound "Wow.mp3"
-
-# ADD LINE: CorruptedMods >= 1
-Show # value
-	CorruptedMods >= 1
-    Corrupted True
-    Rarity = Unique
-    SetBackgroundColor 150 0 0 200
-    SetBorderColor 175 96 37
-    SetFontSize 40
-    DisableDropSound
-    MinimapIcon 0 Brown Square
-    PlayEffect Brown
-    CustomAlertSound "Wow.mp3"
-
 # ADD LINE: Replica True
 Show # value
 	Replica True
@@ -2458,7 +2452,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 10
+    StackSize >= 7
     BaseType "Orb of Transmutation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2468,7 +2462,7 @@ Show
     MinimapIcon 2 White Circle
 
 Show
-    StackSize >= 10
+    StackSize >= 7
     BaseType "Orb of Augmentation"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
@@ -2584,95 +2578,95 @@ Show
 
 # Filter Currency
 
-#Hide
-#    BaseType "Orb of Horizons"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 40
-#    DisableDropSound
+Show
+    BaseType "Orb of Horizons"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
-#Hide
-#    BaseType "Orb of Chance"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 40
-#    DisableDropSound
+Show
+    BaseType "Orb of Chance"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
-#Hide
-#    BaseType "Jeweller's Orb"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 40
-#    DisableDropSound
+Show
+    BaseType "Jeweller's Orb"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
-#Hide
-#    BaseType "Chromatic Orb"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 40
-#    DisableDropSound
-#    PlayEffect Green Temp
-
-# ADD LINE: AreaLevel <= 77
-#Hide
-#    BaseType "Orb of Transmutation"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 40
-#    DisableDropSound
+Show
+    BaseType "Chromatic Orb"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
+    PlayEffect Green Temp
 
 # ADD LINE: AreaLevel <= 77
-#Hide
-#    BaseType "Orb of Augmentation"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 35
-#    DisableDropSound
-#    PlayEffect Green Temp
+Show
+    BaseType "Orb of Transmutation"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
 # ADD LINE: AreaLevel <= 77
-#Hide
-#    BaseType "Blacksmith's Whetstone"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 35
-#    DisableDropSound
-#    PlayEffect Green Temp
+Show
+    BaseType "Orb of Augmentation"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 35
+    DisableDropSound
+    PlayEffect Green Temp
 
 # ADD LINE: AreaLevel <= 77
-#Hide
-#    BaseType "Armourer's Scrap"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 35
-#    DisableDropSound
-#    PlayEffect Green Temp
+Show
+    BaseType "Blacksmith's Whetstone"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 35
+    DisableDropSound
+    PlayEffect Green Temp
+
+# ADD LINE: AreaLevel <= 77
+Show
+    BaseType "Armourer's Scrap"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 35
+    DisableDropSound
+    PlayEffect Green Temp
 
 # ADD LINE: AreaLevel <= 75
-#Hide
-#    BaseType "Scroll of Wisdom"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 35
-#    DisableDropSound
+Show
+    BaseType "Scroll of Wisdom"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 35
+    DisableDropSound
 
 # ADD LINE: AreaLevel <= 75
-#Hide
-#    BaseType "Portal Scroll"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 0 128 0 255
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 35
-#    DisableDropSound
+Show
+    BaseType "Portal Scroll"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
+    SetFontSize 35
+    DisableDropSound
 
 # Currency
 
@@ -5105,15 +5099,22 @@ Show
 #-------------------------------------------------------------------------------
 
 # ADD LINE: CorruptedMods >= 1
+#Show
+#    Corrupted True
+#    Rarity >= Rare
+#    SetBackgroundColor 150 0 0 175
+#    SetBorderColor 210 0 0 175
+#    SetFontSize 30
+#    DisableDropSound
+#    PlayEffect Red Temp
+
 Show
-	CorruptedMods >= 1
     Corrupted True
-    Rarity >= Rare
-    SetBackgroundColor 150 0 0 175
-    SetBorderColor 210 0 0 175
-    SetFontSize 30
+    Rarity = Rare
+    SetBackgroundColor 0 0 0 111
+    SetBorderColor 210 0 0
+    SetFontSize 20
     DisableDropSound
-    PlayEffect Red Temp
 
 Show
     Quality >= 28
