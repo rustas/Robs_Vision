@@ -1,4 +1,4 @@
-# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
 # Made by RobUnderscore
 
 # Leveling Currency
@@ -290,6 +290,28 @@ Show
     SetBackgroundColor 0 0 0 111
     SetBorderColor 210 0 0
     SetFontSize 30
+    DisableDropSound
+
+# ADD LINE: AreaLevel < 69
+Show
+	AreaLevel < 69
+    Rarity = Rare
+    Class "Wands"
+    SetTextColor 255 255 0 255
+    SetBackgroundColor 0 0 0 255
+    SetBorderColor 255 255 0 255
+	SetFontSize 30
+    DisableDropSound
+
+# ADD LINE: AreaLevel < 69
+Show
+	AreaLevel < 69
+    Rarity = Rare
+    Class "Helmets" "Gloves" "Boots"
+    SetTextColor 255 255 0 255
+    SetBackgroundColor 0 0 0 255
+    SetBorderColor 255 255 0 255
+	SetFontSize 30
     DisableDropSound
 
 Show
@@ -599,6 +621,7 @@ Show
 Show
 	AreaLevel <= 67
     Rarity = Rare
+    Class "Helmets" "Gloves" "Boots" "Body Armours" "Rings" "Amulets" "Belts" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Claws" "Wands" "Staves" "Warstaves" "Shields" "Quivers" "Bows" "Sceptres" "Daggers" "Rune Dagger"
     SetTextColor 255 255 0
     SetBackgroundColor 0 0 0 120
 
@@ -606,6 +629,7 @@ Show
 Show
 	AreaLevel < 23
     Rarity = Magic
+	Class "Helmets" "Gloves" "Boots" "Body Armours" "Rings" "Amulets" "Belts" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Claws" "Wands" "Staves" "Warstaves" "Shields" "Quivers" "Bows" "Sceptres" "Daggers" "Rune Dagger"
     SetBackgroundColor 0 0 0 120
     SetFontSize 27
 
@@ -613,151 +637,152 @@ Show
 Show
 	AreaLevel < 8
     Rarity = Normal
+    Class "Helmets" "Gloves" "Boots" "Body Armours" "Rings" "Amulets" "Belts" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Claws" "Wands" "Staves" "Warstaves" "Shields" "Quivers" "Bows" "Sceptres" "Daggers" "Rune Dagger"
     SetBackgroundColor 0 0 0 125
     SetFontSize 28
 
 # League Specific: Settlers
 
-#Show
-#    Class "Gold"
-#    SetTextColor 245 212 35
-#    SetBackgroundColor 255 255 255 0
-#    SetBorderColor 255 255 255 0
-#    SetFontSize 15
-#    DisableDropSound
+Show
+    Class "Gold"
+    SetTextColor 245 212 35
+    SetBackgroundColor 255 255 255 0
+    SetBorderColor 255 255 255 0
+    SetFontSize 15
+    DisableDropSound
 
-#Show
-#    Class "Map Fragment"
-#    BaseType "An Audience With The King"
-#    SetTextColor 177 177 48 255
-#    SetBackgroundColor 255 255 255 255
-#    SetBorderColor 177 177 48 255
-#    SetFontSize 45
-#    DisableDropSound
-#    MinimapIcon 0 White Hexagon
-#    PlayEffect White
-#    CustomAlertSound "nice.mp3"
+Show
+    Class "Map Fragment"
+    BaseType "An Audience With The King"
+    SetTextColor 177 177 48 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 177 177 48 255
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 White Hexagon
+    PlayEffect White
+    CustomAlertSound "nice.mp3"
 
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Prismatic Oil" "Reflecting Mist"
-#    SetTextColor 177 177 48 255
-#    SetBackgroundColor 255 255 255 255
-#    SetBorderColor 177 177 48 255
-#    SetFontSize 45
-#    DisableDropSound
-#    MinimapIcon 0 White Hexagon
-#    PlayEffect White
-#    CustomAlertSound "nice.mp3"
+Show
+    Class "Stackable Currency"
+    BaseType "Prismatic Oil" "Reflecting Mist"
+    SetTextColor 177 177 48 255
+    SetBackgroundColor 255 255 255 255
+    SetBorderColor 177 177 48 255
+    SetFontSize 45
+    DisableDropSound
+    MinimapIcon 0 White Hexagon
+    PlayEffect White
+    CustomAlertSound "nice.mp3"
 
-#Show
-#    Class "Tinctures"
-#    SetTextColor 0 0 0 255
-#    SetBackgroundColor 210 0 220 190
-#    SetBorderColor 0 0 0 255
-#    SetFontSize 33
-#    PlayEffect White Temp
+Show
+    Class "Tinctures"
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 210 0 220 190
+    SetBorderColor 0 0 0 255
+    SetFontSize 33
+    PlayEffect White Temp
 
-#Show
-#    Class "Corpses"
-#    SetTextColor 210 0 220 190
-#    SetBackgroundColor 128 128 128 99
-#    SetBorderColor 210 0 220 190
-#    SetFontSize 33
+Show
+    Class "Corpses"
+    SetTextColor 210 0 220 190
+    SetBackgroundColor 128 128 128 99
+    SetBorderColor 210 0 220 190
+    SetFontSize 33
 
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
-#    SetTextColor 255 255 255 255
-#    SetBackgroundColor 30 144 255
-#    SetBorderColor 255 255 255 255
-#    SetFontSize 35
-#    DisableDropSound
-#    MinimapIcon 1 White Circle
-#    CustomAlertSound "gold.wav"
+Show
+    Class "Stackable Currency"
+    BaseType "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 30 144 255
+    SetBorderColor 255 255 255 255
+    SetFontSize 35
+    DisableDropSound
+    MinimapIcon 1 White Circle
+    CustomAlertSound "gold.wav"
 
-#Show
-#    Class "Stackable Currency"
-#    BaseType "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
-#    SetTextColor 0 0 255 255
-#    SetBackgroundColor 30 144 255
-#    SetBorderColor 0 0 255 255
-#    SetFontSize 35
-#    DisableDropSound
-#    MinimapIcon 1 White Circle
-#    CustomAlertSound "gold.wav"
+Show
+    Class "Stackable Currency"
+    BaseType "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
+    SetTextColor 0 0 255 255
+    SetBackgroundColor 30 144 255
+    SetBorderColor 0 0 255 255
+    SetFontSize 35
+    DisableDropSound
+    MinimapIcon 1 White Circle
+    CustomAlertSound "gold.wav"
 
-#Show
-#    Rarity = Rare
-#    BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
-#    SetTextColor 255 255 0 255
-#    SetBackgroundColor 255 255 255 200
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 40
-#    MinimapIcon 1 Yellow Star
-#    PlayEffect Yellow Temp
+Show
+    Rarity = Rare
+    BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
+    SetTextColor 255 255 0 255
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 255 165 0 255
+    SetFontSize 40
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow Temp
 
-#Show
-#    Rarity = Magic
-#    BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
-#    SetBackgroundColor 255 255 255 200
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 30
+Show
+    Rarity = Magic
+    BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 255 165 0 255
+    SetFontSize 30
 
-#Show
-#    Rarity = Normal
-#    BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
-#    SetBackgroundColor 255 255 255 200
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 25
+Show
+    Rarity = Normal
+    BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 255 165 0 255
+    SetFontSize 25
 
-#Show
-#    Rarity = Rare
-#    BaseType "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
-#    SetTextColor 255 255 0 255
-#    SetBackgroundColor 255 255 255 200
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 40
-#    MinimapIcon 1 Yellow Star
-#    PlayEffect Yellow
+Show
+    Rarity = Rare
+    BaseType "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
+    SetTextColor 255 255 0 255
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 255 165 0 255
+    SetFontSize 40
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow
 
-#Show
-#    Rarity = Magic
-#    BaseType "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
-#    SetBackgroundColor 255 255 255 200
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 30
+Show
+    Rarity = Magic
+    BaseType "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 255 165 0 255
+    SetFontSize 30
 
-#Show
-#    Rarity = Normal
-#    BaseType "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
-#    SetBackgroundColor 255 255 255 200
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 25
+Show
+    Rarity = Normal
+    BaseType "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 255 165 0 255
+    SetFontSize 25
 
-#Show
-#    Rarity = Rare
-#    BaseType "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
-#    SetTextColor 255 255 0 255
-#    SetBackgroundColor 255 255 255 200
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 40
-#    MinimapIcon 1 Yellow Star
-#    PlayEffect Yellow
+Show
+    Rarity = Rare
+    BaseType "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
+    SetTextColor 255 255 0 255
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 255 165 0 255
+    SetFontSize 40
+    MinimapIcon 1 Yellow Star
+    PlayEffect Yellow
 
-#Show
-#    Rarity = Magic
-#    BaseType "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
-#    SetBackgroundColor 255 255 255 200
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 30
+Show
+    Rarity = Magic
+    BaseType "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 255 165 0 255
+    SetFontSize 30
 
-#Show
-#    Rarity = Normal
-#    BaseType "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
-#    SetBackgroundColor 255 255 255 200
-#    SetBorderColor 255 165 0 255
-#    SetFontSize 25
+Show
+    Rarity = Normal
+    BaseType "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 255 165 0 255
+    SetFontSize 25
 
 # League Specific: Affliction
 
@@ -1180,7 +1205,7 @@ Show
 
 # League Specific: Harvest
 
-Show # maps
+Show
     BaseType "Gift to the Goddess"
     SetTextColor 255 255 255
     SetBackgroundColor 74 230 58
@@ -1191,7 +1216,7 @@ Show # maps
     PlayEffect Green
     CustomAlertSound "money.mp3"
 
-Show # maps
+Show
     BaseType "Tribute to the Goddess" "Dedication to the Goddess"
     SetTextColor 0 128 0 255
     SetBackgroundColor 74 230 58 191
@@ -1202,7 +1227,7 @@ Show # maps
     MinimapIcon 1 Green Hexagon
     PlayEffect Green Temp
 
-Show # maps
+Show
     BaseType "Craicic Lure" "Farric Lure" "Fenumal Lure" "Saqawine Lure"
     SetTextColor 0 128 0 255
     SetBackgroundColor 74 230 58 191
@@ -1216,8 +1241,8 @@ Show # maps
 # League Specific: Delirium
 
 # ADD LINE: PlayEffect Grey,MinimapIcon 0 Brown Diamond
+Show
 	PlayEffect Grey
-	MinimapIcon 0 Brown Diamond
 	MinimapIcon 0 Brown Diamond
     Rarity = Unique
     BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
@@ -1228,8 +1253,8 @@ Show # maps
     DisableDropSound
 
 # ADD LINE: PlayEffect Grey,MinimapIcon 0 Grey Diamond
+Show
 	PlayEffect Grey
-	MinimapIcon 0 Grey Diamond
 	MinimapIcon 0 Grey Diamond
     ItemLevel >= 84
     BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
@@ -1240,8 +1265,8 @@ Show # maps
     DisableDropSound
 
 # ADD LINE: PlayEffect Grey,MinimapIcon 0 Grey Diamond
+Show
 	PlayEffect Grey
-	MinimapIcon 0 Grey Diamond
 	MinimapIcon 0 Grey Diamond
     BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
     SetTextColor 255 255 255 255
@@ -1251,8 +1276,8 @@ Show # maps
     DisableDropSound
 
 # ADD LINE: PlayEffect Grey,MinimapIcon 0 Grey Circle
+Show
 	PlayEffect Grey
-	MinimapIcon 0 Grey Circle
 	MinimapIcon 0 Grey Circle
     BaseType "Kalguuran Delirium Orb" "Fine Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Cartographer's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Skittering Delirium Orb" "Fossilised Delirium Orb" "Diviner's Delirium Orb" "Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Timeless Delirium Orb" "Blighted Delirium Orb"
     SetTextColor 128 128 128 255
@@ -1348,6 +1373,7 @@ Show
     PlayEffect White Temp
 
 # ADD LINE: AreaLevel <= 81
+Show
 	AreaLevel <= 81
     BaseType "Amber Oil" "Verdant Oil"
     SetTextColor 128 128 128 255
@@ -3669,9 +3695,9 @@ Show # Gems
     SetBorderColor 27 162 155
     SetFontSize 35
 
-# ADD LINE: AreaLevel <= 67
+# ADD LINE: AreaLevel <= 68
 Show
-	AreaLevel <= 67
+	AreaLevel <= 68
     Class "Gems" "Skill Gems" "Support Gems"
 
 # Flasks
@@ -4984,17 +5010,8 @@ Show
     SetBorderColor 255 255 0 255
     DisableDropSound
 
-# ADD LINE: AreaLevel < 75
-	AreaLevel < 75
-#    Rarity = Rare
-#    Class "Quivers"
-#    SetTextColor 255 255 0 255
-#    SetBackgroundColor 0 0 0 255
-#    SetBorderColor 255 255 0 255
-#    DisableDropSound
-
 # ADD LINE: AreaLevel <= 75
-	AreaLevel <= 75
+Show
 	AreaLevel <= 75
     Rarity = Rare
     Class "Helmets" "Gloves" "Boots"
@@ -5085,7 +5102,7 @@ Show
 # Jewels
 
 # ADD LINE: CorruptedMods >= 2
-	CorruptedMods >= 2
+Show
 	CorruptedMods >= 2
     Corrupted True
     Rarity <= Unique
@@ -5181,7 +5198,7 @@ Show
     DisableDropSound
 
 Show
-    Quality >= 28
+    Quality >= 25
     SetBorderColor 255 165 0 170
     SetFontSize 37
 
