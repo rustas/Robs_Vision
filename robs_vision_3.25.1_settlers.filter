@@ -4934,7 +4934,7 @@ Show
 Show
     Corrupted False
     Rarity = Rare
-    BaseType "Spiked Gloves" "Titan Gauntlets" "Gripped Gloves" "Sinistral Gloves" "Debilitation Gauntlets" "Fingerless Silk Gloves" "Nexus Gloves" "Sorcerer Gloves" "Apothecary's Gloves"
+    BaseType "Spiked Gloves" "Titan Gauntlets" "Gripped Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Sorcerer Gloves" "Apothecary's Gloves"
     SetTextColor 0 0 0 255
     SetBackgroundColor 255 255 0
     SetBorderColor 255 255 0 255
@@ -5051,13 +5051,6 @@ Show
     SetFontSize 40
     PlayEffect Yellow
 
-Show
-    Class "Gloves"
-    BaseType "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves"
-    SetBackgroundColor 255 165 0 75
-    SetBorderColor 255 165 0 255
-    SetFontSize 40
-    PlayEffect Yellow
 
 Show
     Class "Helmets"
