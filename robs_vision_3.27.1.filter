@@ -3140,7 +3140,7 @@ Show
     DisableDropSound
 
 Show
-    BaseType "Orb of Transmutation" "Orb of Augmentation" "Jeweller's Orb"
+    BaseType "Orb of Transmutation" "Orb of Augmentation" "Jeweller's Orb" "Chromatic Orb"
     SetTextColor 0 0 0 255
     SetBackgroundColor 0 128 0 255
     SetBorderColor 0 0 0 255
