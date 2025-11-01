@@ -271,6 +271,7 @@ Show
 
 # ADD LINE: Foulborn True
 Show
+	Foulborn True
     Rarity = Unique
     SetTextColor 150 0 0
     SetBackgroundColor 175 96 37
